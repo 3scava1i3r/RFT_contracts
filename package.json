@@ -1,0 +1,15 @@
+{
+  "name": "rft_contracts",
+  "version": "1.0.0",
+  "description": "RFT_contracts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hritwik Tripathi",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.4.1",
+    "openzeppelin-solidity": "^1.12.0"
+  }
+}

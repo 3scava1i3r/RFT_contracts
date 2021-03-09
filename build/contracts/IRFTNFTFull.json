@@ -1,0 +1,804 @@
+{
+  "contractName": "IRFTNFTFull",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getApproved",
+      "outputs": [
+        {
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_approved",
+          "type": "address"
+        },
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferFrom",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "name": "_index",
+          "type": "uint256"
+        }
+      ],
+      "name": "tokenOfOwnerByIndex",
+      "outputs": [
+        {
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "safeTransferFrom",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_index",
+          "type": "uint256"
+        }
+      ],
+      "name": "tokenByIndex",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "ownerOf",
+      "outputs": [
+        {
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "name": "balance",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "symbol",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_operator",
+          "type": "address"
+        },
+        {
+          "name": "_approved",
+          "type": "bool"
+        }
+      ],
+      "name": "setApprovalForAll",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        },
+        {
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "safeTransferFrom",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "tokenURI",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "name": "_operator",
+          "type": "address"
+        }
+      ],
+      "name": "isApprovedForAll",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "approved",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Approval",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "approved",
+          "type": "bool"
+        }
+      ],
+      "name": "ApprovalForAll",
+      "type": "event"
+    }
+  ],
+  "metadata": "",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.24;\n\nimport './IRFTNFT.sol';\nimport './IRFTNFTMetadata.sol';\nimport './IRFTNFTEnumerable.sol';\n\n/**\n * @title RFT Non-Fungible Token interface, that is supplied with Fungible Token\n * @notice Non-Fungible Token full interface \n */\ncontract IRFTNFTFull is IRFTNFT, IRFTNFTMetadata, IRFTNFTEnumerable {}",
+  "sourcePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTFull.sol",
+  "ast": {
+    "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTFull.sol",
+    "exportedSymbols": {
+      "IRFTNFTFull": [
+        376
+      ]
+    },
+    "id": 377,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 366,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:8"
+      },
+      {
+        "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFT.sol",
+        "file": "./IRFTNFT.sol",
+        "id": 367,
+        "nodeType": "ImportDirective",
+        "scope": 377,
+        "sourceUnit": 338,
+        "src": "26:23:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTMetadata.sol",
+        "file": "./IRFTNFTMetadata.sol",
+        "id": 368,
+        "nodeType": "ImportDirective",
+        "scope": 377,
+        "sourceUnit": 400,
+        "src": "50:31:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTEnumerable.sol",
+        "file": "./IRFTNFTEnumerable.sol",
+        "id": 369,
+        "nodeType": "ImportDirective",
+        "scope": 377,
+        "sourceUnit": 365,
+        "src": "82:33:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 370,
+              "name": "IRFTNFT",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 337,
+              "src": "276:7:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IRFTNFT_$337",
+                "typeString": "contract IRFTNFT"
+              }
+            },
+            "id": 371,
+            "nodeType": "InheritanceSpecifier",
+            "src": "276:7:8"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 372,
+              "name": "IRFTNFTMetadata",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 399,
+              "src": "285:15:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IRFTNFTMetadata_$399",
+                "typeString": "contract IRFTNFTMetadata"
+              }
+            },
+            "id": 373,
+            "nodeType": "InheritanceSpecifier",
+            "src": "285:15:8"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 374,
+              "name": "IRFTNFTEnumerable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 364,
+              "src": "302:17:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IRFTNFTEnumerable_$364",
+                "typeString": "contract IRFTNFTEnumerable"
+              }
+            },
+            "id": 375,
+            "nodeType": "InheritanceSpecifier",
+            "src": "302:17:8"
+          }
+        ],
+        "contractDependencies": [
+          337,
+          364,
+          399
+        ],
+        "contractKind": "contract",
+        "documentation": "@title RFT Non-Fungible Token interface, that is supplied with Fungible Token\n@notice Non-Fungible Token full interface ",
+        "fullyImplemented": false,
+        "id": 376,
+        "linearizedBaseContracts": [
+          376,
+          364,
+          399,
+          337
+        ],
+        "name": "IRFTNFTFull",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 377,
+        "src": "252:70:8"
+      }
+    ],
+    "src": "0:322:8"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTFull.sol",
+      "exportedSymbols": {
+        "IRFTNFTFull": [
+          376
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".24"
+          ]
+        },
+        "id": 366,
+        "name": "PragmaDirective",
+        "src": "0:24:8"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 338,
+          "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFT.sol",
+          "file": "./IRFTNFT.sol",
+          "scope": 377,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 367,
+        "name": "ImportDirective",
+        "src": "26:23:8"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 400,
+          "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTMetadata.sol",
+          "file": "./IRFTNFTMetadata.sol",
+          "scope": 377,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 368,
+        "name": "ImportDirective",
+        "src": "50:31:8"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 365,
+          "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTEnumerable.sol",
+          "file": "./IRFTNFTEnumerable.sol",
+          "scope": 377,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 369,
+        "name": "ImportDirective",
+        "src": "82:33:8"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            337,
+            364,
+            399
+          ],
+          "contractKind": "contract",
+          "documentation": "@title RFT Non-Fungible Token interface, that is supplied with Fungible Token\n@notice Non-Fungible Token full interface ",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            376,
+            364,
+            399,
+            337
+          ],
+          "name": "IRFTNFTFull",
+          "nodes": [
+            null
+          ],
+          "scope": 377
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "IRFTNFT",
+                  "referencedDeclaration": 337,
+                  "type": "contract IRFTNFT"
+                },
+                "id": 370,
+                "name": "UserDefinedTypeName",
+                "src": "276:7:8"
+              }
+            ],
+            "id": 371,
+            "name": "InheritanceSpecifier",
+            "src": "276:7:8"
+          },
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "IRFTNFTMetadata",
+                  "referencedDeclaration": 399,
+                  "type": "contract IRFTNFTMetadata"
+                },
+                "id": 372,
+                "name": "UserDefinedTypeName",
+                "src": "285:15:8"
+              }
+            ],
+            "id": 373,
+            "name": "InheritanceSpecifier",
+            "src": "285:15:8"
+          },
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "IRFTNFTEnumerable",
+                  "referencedDeclaration": 364,
+                  "type": "contract IRFTNFTEnumerable"
+                },
+                "id": 374,
+                "name": "UserDefinedTypeName",
+                "src": "302:17:8"
+              }
+            ],
+            "id": 375,
+            "name": "InheritanceSpecifier",
+            "src": "302:17:8"
+          }
+        ],
+        "id": 376,
+        "name": "ContractDefinition",
+        "src": "252:70:8"
+      }
+    ],
+    "id": 377,
+    "name": "SourceUnit",
+    "src": "0:322:8"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-08T14:55:07.470Z",
+  "devdoc": {
+    "methods": {
+      "approve(address,uint256)": {
+        "details": "The zero address indicates there is no approved address.Throws unless `msg.sender` is the current NFT owner, or an authorized operator of the current owner.",
+        "params": {
+          "_approved": "- The new approved NFT controller",
+          "_tokenId": "- The NFT to approve"
+        }
+      },
+      "balanceOf(address)": {
+        "details": "NFTs assigned to the zero address are considered invalid, and this function throws for queries about the zero address.",
+        "params": {
+          "_owner": "- An address for whom to query the balance"
+        },
+        "return": "The number of NFTs owned by `_owner`, possibly zero"
+      },
+      "getApproved(uint256)": {
+        "details": "Throws if `_tokenId` is not a valid NFT",
+        "params": {
+          "_tokenId": "- The NFT to find the approved address for"
+        },
+        "return": "The approved address for this NFT, or the zero address if there is none"
+      },
+      "isApprovedForAll(address,address)": {
+        "params": {
+          "_operator": "- The address that acts on behalf of the owner",
+          "_owner": "- The address that owns the NFTs"
+        },
+        "return": "True if `_operator` is an approved operator for `_owner`, false otherwise"
+      },
+      "name()": {
+        "details": "Returns name of RFT Non-Fungible Token series"
+      },
+      "ownerOf(uint256)": {
+        "details": "NFTs assigned to zero address are considered invalid, and queries about them do throw.",
+        "params": {
+          "_tokenId": "- The identifier for an NFT"
+        },
+        "return": "The address of the owner of the NFT"
+      },
+      "safeTransferFrom(address,address,uint256)": {
+        "details": "Throws unless `msg.sender` is the current owner, an authorized operator, or the approved address for this NFT. Throws if `_from` is not the current owner. Throws if `_to` is the zero address. Throws if `_tokenId` is not a valid NFT. When transfer is complete, this function checks if `_to` is a smart contract (code size > 0). If so, it calls `onERC721Received` on `_to` and throws if the return value is not `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`.",
+        "params": {
+          "_from": "- The current owner of the NFT",
+          "_to": "- The new owner",
+          "_tokenId": "- The NFT to transfer"
+        }
+      },
+      "safeTransferFrom(address,address,uint256,bytes)": {
+        "details": "Throws unless `msg.sender` is the current owner, an authorized operator, or the approved address for this NFT. Throws if `_from` is not the current owner. Throws if `_to` is the zero address. Throws if `_tokenId` is not a valid NFT. When transfer is complete, this function checks if `_to` is a smart contract (code size > 0). If so, it calls `onERC721Received` on `_to` and throws if the return value is not `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`.",
+        "params": {
+          "_data": "- Additional data with no specified format, sent in call to `_to`",
+          "_from": "- The current owner of the NFT",
+          "_to": "- The new owner",
+          "_tokenId": "- The NFT to transfer"
+        }
+      },
+      "setApprovalForAll(address,bool)": {
+        "details": "Emits the ApprovalForAll event. The contract MUST allow multiple operators per owner.",
+        "params": {
+          "_approved": "- True if the operator is approved, false to revoke approval",
+          "_operator": "- Address to add to the set of authorized operators."
+        }
+      },
+      "symbol()": {
+        "details": "Returns symbol of RFT Non-Fungible Token series"
+      },
+      "tokenByIndex(uint256)": {
+        "details": "Returns Non-Fungible Token unique identifier by it's index in array",
+        "params": {
+          "_index": "- Index of NFT in array"
+        }
+      },
+      "tokenOfOwnerByIndex(address,uint256)": {
+        "details": "Returns owner of Non-Fungible token by it's index in array",
+        "params": {
+          "_index": "- Index of Non-Fungible Token in NFT array",
+          "_owner": "- Address of Non-Fungible Token owner"
+        }
+      },
+      "tokenURI(uint256)": {
+        "details": "Returns Unique Resource Identifier of RFT Non-Fungible Token",
+        "params": {
+          "_tokenId": "- Unique Non-Fungible Token identifier"
+        }
+      },
+      "totalSupply()": {
+        "details": "Returns total capacity of current NFT series"
+      },
+      "transferFrom(address,address,uint256)": {
+        "details": "Throws unless `msg.sender` is the current owner, an authorized operator, or the approved address for this NFT. Throws if `_from` is not the current owner. Throws if `_to` is the zero address. Throws if `_tokenId` is not a valid NFT.",
+        "params": {
+          "_from": "- The current owner of the NFT",
+          "_to": "- The new owner",
+          "_tokenId": "- The NFT to transfer"
+        }
+      }
+    },
+    "title": "RFT Non-Fungible Token interface, that is supplied with Fungible Token"
+  },
+  "userdoc": {
+    "methods": {
+      "approve(address,uint256)": {
+        "notice": "Set or reaffirm the approved address for an NFT"
+      },
+      "balanceOf(address)": {
+        "notice": "Count all NFTs assigned to an owner"
+      },
+      "getApproved(uint256)": {
+        "notice": "Get the approved address for a single NFT"
+      },
+      "isApprovedForAll(address,address)": {
+        "notice": "Query if an address is an authorized operator for another address"
+      },
+      "ownerOf(uint256)": {
+        "notice": "Find the owner of an NFT"
+      },
+      "safeTransferFrom(address,address,uint256)": {
+        "notice": "Transfers the ownership of an NFT from one address to another address"
+      },
+      "safeTransferFrom(address,address,uint256,bytes)": {
+        "notice": "Transfers the ownership of an NFT from one address to another address"
+      },
+      "setApprovalForAll(address,bool)": {
+        "notice": "Enable or disable approval for a third party (\"operator\") to manage all of `msg.sender`'s assets."
+      },
+      "transferFrom(address,address,uint256)": {
+        "notice": "Transfer ownership of an NFT -- THE CALLER IS RESPONSIBLE TO CONFIRM THAT `_to` IS CAPABLE OF RECEIVING NFTS OR ELSE THEY MAY BE PERMANENTLY LOST"
+      }
+    }
+  }
+}

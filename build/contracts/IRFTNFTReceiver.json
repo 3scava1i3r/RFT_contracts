@@ -1,0 +1,490 @@
+{
+  "contractName": "IRFTNFTReceiver",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_operator",
+          "type": "address"
+        },
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        },
+        {
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "onRFTReceived",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.24;\n\ninterface IRFTNFTReceiver {\n    /**\n     * Note: the NFT main contract address is always the message sender (msg.sender)\n     * @param _operator - Address who called 'transferFrom' function\n     * @param _from - The address which previously owned the Non-Fungible Token\n     * @param _tokenId - The Non-Fungible Token unique identifier\n     * @param _data - Additional data with unspecified format\n     * @return `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`\n     * unless throwing\n     */\n    function onRFTReceived(\n        address _operator, \n        address _from, \n        uint256 _tokenId, \n        bytes _data\n    ) \n        external \n        returns (bytes4);\n}",
+  "sourcePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTReceiver.sol",
+  "ast": {
+    "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTReceiver.sol",
+    "exportedSymbols": {
+      "IRFTNFTReceiver": [
+        415
+      ]
+    },
+    "id": 416,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 401,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:10"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 415,
+        "linearizedBaseContracts": [
+          415
+        ],
+        "name": "IRFTNFTReceiver",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "Note: the NFT main contract address is always the message sender (msg.sender)\n@param _operator - Address who called 'transferFrom' function\n@param _from - The address which previously owned the Non-Fungible Token\n@param _tokenId - The Non-Fungible Token unique identifier\n@param _data - Additional data with unspecified format\n@return `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`\nunless throwing",
+            "id": 414,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "onRFTReceived",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 410,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 403,
+                  "name": "_operator",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 414,
+                  "src": "577:17:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 402,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "577:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 405,
+                  "name": "_from",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 414,
+                  "src": "605:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 404,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "605:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 407,
+                  "name": "_tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 414,
+                  "src": "629:16:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 406,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "629:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 409,
+                  "name": "_data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 414,
+                  "src": "656:11:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 408,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "656:5:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "567:106:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 413,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 412,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 414,
+                  "src": "710:6:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 411,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "710:6:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "709:8:10"
+            },
+            "scope": 415,
+            "src": "545:173:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 416,
+        "src": "26:694:10"
+      }
+    ],
+    "src": "0:720:10"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTReceiver.sol",
+      "exportedSymbols": {
+        "IRFTNFTReceiver": [
+          415
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".24"
+          ]
+        },
+        "id": 401,
+        "name": "PragmaDirective",
+        "src": "0:24:10"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            415
+          ],
+          "name": "IRFTNFTReceiver",
+          "scope": 416
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "constant": false,
+              "documentation": "Note: the NFT main contract address is always the message sender (msg.sender)\n@param _operator - Address who called 'transferFrom' function\n@param _from - The address which previously owned the Non-Fungible Token\n@param _tokenId - The Non-Fungible Token unique identifier\n@param _data - Additional data with unspecified format\n@return `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`\nunless throwing",
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "onRFTReceived",
+              "payable": false,
+              "scope": 415,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_operator",
+                      "scope": 414,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 402,
+                        "name": "ElementaryTypeName",
+                        "src": "577:7:10"
+                      }
+                    ],
+                    "id": 403,
+                    "name": "VariableDeclaration",
+                    "src": "577:17:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_from",
+                      "scope": 414,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 404,
+                        "name": "ElementaryTypeName",
+                        "src": "605:7:10"
+                      }
+                    ],
+                    "id": 405,
+                    "name": "VariableDeclaration",
+                    "src": "605:13:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_tokenId",
+                      "scope": 414,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 406,
+                        "name": "ElementaryTypeName",
+                        "src": "629:7:10"
+                      }
+                    ],
+                    "id": 407,
+                    "name": "VariableDeclaration",
+                    "src": "629:16:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_data",
+                      "scope": 414,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 408,
+                        "name": "ElementaryTypeName",
+                        "src": "656:5:10"
+                      }
+                    ],
+                    "id": 409,
+                    "name": "VariableDeclaration",
+                    "src": "656:11:10"
+                  }
+                ],
+                "id": 410,
+                "name": "ParameterList",
+                "src": "567:106:10"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 414,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes4",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes4",
+                          "type": "bytes4"
+                        },
+                        "id": 411,
+                        "name": "ElementaryTypeName",
+                        "src": "710:6:10"
+                      }
+                    ],
+                    "id": 412,
+                    "name": "VariableDeclaration",
+                    "src": "710:6:10"
+                  }
+                ],
+                "id": 413,
+                "name": "ParameterList",
+                "src": "709:8:10"
+              }
+            ],
+            "id": 414,
+            "name": "FunctionDefinition",
+            "src": "545:173:10"
+          }
+        ],
+        "id": 415,
+        "name": "ContractDefinition",
+        "src": "26:694:10"
+      }
+    ],
+    "id": 416,
+    "name": "SourceUnit",
+    "src": "0:720:10"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-08T14:55:07.470Z",
+  "devdoc": {
+    "methods": {
+      "onRFTReceived(address,address,uint256,bytes)": {
+        "params": {
+          "_data": "- Additional data with unspecified format",
+          "_from": "- The address which previously owned the Non-Fungible Token",
+          "_operator": "- Address who called 'transferFrom' function",
+          "_tokenId": "- The Non-Fungible Token unique identifier"
+        },
+        "return": "`bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))` unless throwing"
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {
+      "onRFTReceived(address,address,uint256,bytes)": {
+        "notice": "Note: the NFT main contract address is always the message sender (msg.sender)"
+      }
+    }
+  }
+}
