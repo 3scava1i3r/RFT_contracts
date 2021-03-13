@@ -537,14 +537,14 @@
     "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFT.sol",
     "exportedSymbols": {
       "IRFT": [
-        128
+        95
       ]
     },
-    "id": 129,
+    "id": 96,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 34,
+        "id": 1,
         "literals": [
           "solidity",
           "^",
@@ -552,27 +552,27 @@
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:24:0"
       },
       {
         "absolutePath": "openzeppelin-solidity/contracts/math/SafeMath.sol",
         "file": "openzeppelin-solidity/contracts/math/SafeMath.sol",
-        "id": 35,
+        "id": 2,
         "nodeType": "ImportDirective",
-        "scope": 129,
-        "sourceUnit": 2715,
-        "src": "26:59:1",
+        "scope": 96,
+        "sourceUnit": 2754,
+        "src": "26:59:0",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTFull.sol",
         "file": "./IRFTNFTFull.sol",
-        "id": 36,
+        "id": 3,
         "nodeType": "ImportDirective",
-        "scope": 129,
-        "sourceUnit": 377,
-        "src": "86:27:1",
+        "scope": 96,
+        "sourceUnit": 311,
+        "src": "86:27:0",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -582,62 +582,62 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 37,
+              "id": 4,
               "name": "IRFTNFTFull",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 376,
-              "src": "338:11:1",
+              "referencedDeclaration": 310,
+              "src": "338:11:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IRFTNFTFull_$376",
+                "typeIdentifier": "t_contract$_IRFTNFTFull_$310",
                 "typeString": "contract IRFTNFTFull"
               }
             },
-            "id": 38,
+            "id": 5,
             "nodeType": "InheritanceSpecifier",
-            "src": "338:11:1"
+            "src": "338:11:0"
           }
         ],
         "contractDependencies": [
-          337,
-          364,
-          376,
-          399
+          271,
+          298,
+          310,
+          333
         ],
         "contractKind": "contract",
         "documentation": "@title RFT full interface\nThis interface implementing functionality to create RFT token\nthat has Non-Fungible structure and its value is supplied with Fungible Token\n(ERC-20 compatible)",
         "fullyImplemented": false,
-        "id": 128,
+        "id": 95,
         "linearizedBaseContracts": [
-          128,
-          376,
-          364,
-          399,
-          337
+          95,
+          310,
+          298,
+          333,
+          271
         ],
         "name": "IRFT",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 41,
+            "id": 8,
             "libraryName": {
               "contractScope": null,
-              "id": 39,
+              "id": 6,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2714,
-              "src": "362:8:1",
+              "referencedDeclaration": 2753,
+              "src": "362:8:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$2714",
+                "typeIdentifier": "t_contract$_SafeMath_$2753",
                 "typeString": "library SafeMath"
               }
             },
             "nodeType": "UsingForDirective",
-            "src": "356:27:1",
+            "src": "356:27:0",
             "typeName": {
-              "id": 40,
+              "id": 7,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "375:7:1",
+              "src": "375:7:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -647,7 +647,7 @@
           {
             "body": null,
             "documentation": "@dev Creates FT with specified parameters\n@param _name - Name for FT\n@param _symbol - Symbol for FT\n@param _decimals - Precision amount for FT\n@param _tokenOwner - Address of FT owner\n@param _fungibleTokenSupply - Max token supply for FT\n@param _tokenId - Unique identifier of NFT related to this FT",
-            "id": 58,
+            "id": 25,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -655,16 +655,16 @@
             "name": "_createFT",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 54,
+              "id": 21,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 43,
+                  "id": 10,
                   "name": "_name",
                   "nodeType": "VariableDeclaration",
-                  "scope": 58,
-                  "src": "782:12:1",
+                  "scope": 25,
+                  "src": "782:12:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -672,10 +672,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 42,
+                    "id": 9,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "782:6:1",
+                    "src": "782:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -686,11 +686,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 45,
+                  "id": 12,
                   "name": "_symbol",
                   "nodeType": "VariableDeclaration",
-                  "scope": 58,
-                  "src": "804:14:1",
+                  "scope": 25,
+                  "src": "804:14:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -698,10 +698,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 44,
+                    "id": 11,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "804:6:1",
+                    "src": "804:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -712,11 +712,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 47,
+                  "id": 14,
                   "name": "_decimals",
                   "nodeType": "VariableDeclaration",
-                  "scope": 58,
-                  "src": "828:17:1",
+                  "scope": 25,
+                  "src": "828:17:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -724,10 +724,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 46,
+                    "id": 13,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "828:7:1",
+                    "src": "828:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -738,11 +738,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 49,
+                  "id": 16,
                   "name": "_tokenOwner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 58,
-                  "src": "855:19:1",
+                  "scope": 25,
+                  "src": "855:19:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -750,10 +750,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 48,
+                    "id": 15,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "855:7:1",
+                    "src": "855:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -764,11 +764,416 @@
                 },
                 {
                   "constant": false,
-                  "id": 51,
+                  "id": 18,
                   "name": "_fungibleTokenSupply",
                   "nodeType": "VariableDeclaration",
-                  "scope": 58,
-                  "src": "884:28:1",
+                  "scope": 25,
+                  "src": "884:28:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 17,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "884:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20,
+                  "name": "_tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25,
+                  "src": "922:16:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "922:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "772:172:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 24,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 23,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25,
+                  "src": "980:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 22,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "980:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "979:9:0"
+            },
+            "scope": 95,
+            "src": "754:235:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "internal"
+          },
+          {
+            "body": null,
+            "documentation": "@dev Mint NFT token and create FT accordingly\n@param _name - Name for FT\n@param _symbol - Symbol for FT\n@param _decimals - Precision amount for FT\n@param _tokenOwner - Address of FT owner\n@param _fungibleTokenSupply - Max token supply for FT",
+            "id": 40,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "mint",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 36,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 27,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40,
+                  "src": "1319:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 26,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1319:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 29,
+                  "name": "_symbol",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40,
+                  "src": "1341:14:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 28,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1341:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31,
+                  "name": "_decimals",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40,
+                  "src": "1365:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1365:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33,
+                  "name": "_tokenOwner",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40,
+                  "src": "1392:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 32,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1392:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 35,
+                  "name": "_fungibleTokenSupply",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40,
+                  "src": "1421:28:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 34,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1421:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1309:146:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 39,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 38,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40,
+                  "src": "1489:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 37,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1489:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1488:9:0"
+            },
+            "scope": 95,
+            "src": "1296:202:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": "@dev Burn NFT and delete FT data\n@param _owner - owner address of NFT to burn\n@param _tokenId - Unique identifier of NFT",
+            "id": 49,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "burn",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 45,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 42,
+                  "name": "_owner",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49,
+                  "src": "1686:14:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 41,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1686:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44,
+                  "name": "_tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49,
+                  "src": "1710:16:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 43,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1710:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1676:56:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 48,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 47,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 49,
+                  "src": "1766:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 46,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1766:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1765:6:0"
+            },
+            "scope": 95,
+            "src": "1663:109:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": "@dev Returns value of selected NFT\n@param _tokenId - Unique identifier of NFT",
+            "id": 56,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "nftValue",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 52,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51,
+                  "name": "_tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 56,
+                  "src": "1913:16:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -779,7 +1184,7 @@
                     "id": 50,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "884:7:1",
+                    "src": "1913:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -787,14 +1192,22 @@
                   },
                   "value": null,
                   "visibility": "internal"
-                },
+                }
+              ],
+              "src": "1903:32:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 55,
+              "nodeType": "ParameterList",
+              "parameters": [
                 {
                   "constant": false,
-                  "id": 53,
-                  "name": "_tokenId",
+                  "id": 54,
+                  "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 58,
-                  "src": "922:16:1",
+                  "scope": 56,
+                  "src": "1983:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -802,10 +1215,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 52,
+                    "id": 53,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "922:7:1",
+                    "src": "1983:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -815,121 +1228,35 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "772:172:1"
+              "src": "1982:9:0"
             },
-            "payable": false,
-            "returnParameters": {
-              "id": 57,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 56,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 58,
-                  "src": "980:7:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 55,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "980:7:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "979:9:1"
-            },
-            "scope": 128,
-            "src": "754:235:1",
-            "stateMutability": "nonpayable",
+            "scope": 95,
+            "src": "1886:106:0",
+            "stateMutability": "view",
             "superFunction": null,
-            "visibility": "internal"
+            "visibility": "public"
           },
           {
             "body": null,
-            "documentation": "@dev Mint NFT token and create FT accordingly\n@param _name - Name for FT\n@param _symbol - Symbol for FT\n@param _decimals - Precision amount for FT\n@param _tokenOwner - Address of FT owner\n@param _fungibleTokenSupply - Max token supply for FT",
-            "id": 73,
+            "documentation": "@dev Returns FT token balance of specified NFT\n@param _holder - Holder address \n@param _tokenId - Unique identifier of NFT",
+            "id": 65,
             "implemented": false,
             "isConstructor": false,
-            "isDeclaredConst": false,
+            "isDeclaredConst": true,
             "modifiers": [],
-            "name": "mint",
+            "name": "ftHolderBalance",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 69,
+              "id": 61,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 60,
-                  "name": "_name",
+                  "id": 58,
+                  "name": "_tokenId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 73,
-                  "src": "1319:12:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
-                  },
-                  "typeName": {
-                    "id": 59,
-                    "name": "string",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1319:6:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 62,
-                  "name": "_symbol",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 73,
-                  "src": "1341:14:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
-                  },
-                  "typeName": {
-                    "id": 61,
-                    "name": "string",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1341:6:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 64,
-                  "name": "_decimals",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 73,
-                  "src": "1365:17:1",
+                  "scope": 65,
+                  "src": "2193:16:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -937,10 +1264,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 63,
+                    "id": 57,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1365:7:1",
+                    "src": "2193:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -951,11 +1278,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 66,
-                  "name": "_tokenOwner",
+                  "id": 60,
+                  "name": "_holder",
                   "nodeType": "VariableDeclaration",
-                  "scope": 73,
-                  "src": "1392:19:1",
+                  "scope": 65,
+                  "src": "2219:15:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -963,10 +1290,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 65,
+                    "id": 59,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1392:7:1",
+                    "src": "2219:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -974,14 +1301,22 @@
                   },
                   "value": null,
                   "visibility": "internal"
-                },
+                }
+              ],
+              "src": "2183:57:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 64,
+              "nodeType": "ParameterList",
+              "parameters": [
                 {
                   "constant": false,
-                  "id": 68,
-                  "name": "_fungibleTokenSupply",
+                  "id": 63,
+                  "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 73,
-                  "src": "1421:28:1",
+                  "scope": 65,
+                  "src": "2289:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -989,10 +1324,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 67,
+                    "id": 62,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1421:7:1",
+                    "src": "2289:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1002,20 +1337,87 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1309:146:1"
+              "src": "2288:9:0"
             },
-            "payable": false,
-            "returnParameters": {
+            "scope": 95,
+            "src": "2159:139:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": "@dev Returns all FT token holders and their balances of specified NFT\n@param _tokenId - Unique identifier of NFT\n@param _indexFrom - Start index inside array of token holders\n@param _indexTo - End index inside array of token holders",
+            "id": 80,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "ftHoldersBalances",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
               "id": 72,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 71,
-                  "name": "",
+                  "id": 67,
+                  "name": "_tokenId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 73,
-                  "src": "1489:7:1",
+                  "scope": 80,
+                  "src": "2617:16:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 66,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2617:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 69,
+                  "name": "_indexFrom",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 80,
+                  "src": "2643:18:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 68,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2643:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 71,
+                  "name": "_indexTo",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 80,
+                  "src": "2671:16:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1026,7 +1428,7 @@
                     "id": 70,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1489:7:1",
+                    "src": "2671:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1036,422 +1438,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1488:9:1"
+              "src": "2607:86:0"
             },
-            "scope": 128,
-            "src": "1296:202:1",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": null,
-            "documentation": "@dev Burn NFT and delete FT data\n@param _owner - owner address of NFT to burn\n@param _tokenId - Unique identifier of NFT",
-            "id": 82,
-            "implemented": false,
-            "isConstructor": false,
-            "isDeclaredConst": false,
-            "modifiers": [],
-            "name": "burn",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 78,
+            "payable": false,
+            "returnParameters": {
+              "id": 79,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
                   "id": 75,
-                  "name": "_owner",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 82,
-                  "src": "1686:14:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 74,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1686:7:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 77,
-                  "name": "_tokenId",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 82,
-                  "src": "1710:16:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 76,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1710:7:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1676:56:1"
-            },
-            "payable": false,
-            "returnParameters": {
-              "id": 81,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 80,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 82,
-                  "src": "1766:4:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bool",
-                    "typeString": "bool"
-                  },
-                  "typeName": {
-                    "id": 79,
-                    "name": "bool",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1766:4:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1765:6:1"
-            },
-            "scope": 128,
-            "src": "1663:109:1",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": null,
-            "documentation": "@dev Returns value of selected NFT\n@param _tokenId - Unique identifier of NFT",
-            "id": 89,
-            "implemented": false,
-            "isConstructor": false,
-            "isDeclaredConst": true,
-            "modifiers": [],
-            "name": "nftValue",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 85,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 84,
-                  "name": "_tokenId",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 89,
-                  "src": "1913:16:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 83,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1913:7:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1903:32:1"
-            },
-            "payable": false,
-            "returnParameters": {
-              "id": 88,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 87,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 89,
-                  "src": "1983:7:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 86,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1983:7:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1982:9:1"
-            },
-            "scope": 128,
-            "src": "1886:106:1",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": null,
-            "documentation": "@dev Returns FT token balance of specified NFT\n@param _holder - Holder address \n@param _tokenId - Unique identifier of NFT",
-            "id": 98,
-            "implemented": false,
-            "isConstructor": false,
-            "isDeclaredConst": true,
-            "modifiers": [],
-            "name": "ftHolderBalance",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 94,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 91,
-                  "name": "_tokenId",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 98,
-                  "src": "2193:16:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 90,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "2193:7:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 93,
-                  "name": "_holder",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 98,
-                  "src": "2219:15:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 92,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "2219:7:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "2183:57:1"
-            },
-            "payable": false,
-            "returnParameters": {
-              "id": 97,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 96,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 98,
-                  "src": "2289:7:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 95,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "2289:7:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "2288:9:1"
-            },
-            "scope": 128,
-            "src": "2159:139:1",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": null,
-            "documentation": "@dev Returns all FT token holders and their balances of specified NFT\n@param _tokenId - Unique identifier of NFT\n@param _indexFrom - Start index inside array of token holders\n@param _indexTo - End index inside array of token holders",
-            "id": 113,
-            "implemented": false,
-            "isConstructor": false,
-            "isDeclaredConst": true,
-            "modifiers": [],
-            "name": "ftHoldersBalances",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 105,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 100,
-                  "name": "_tokenId",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 113,
-                  "src": "2617:16:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 99,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "2617:7:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 102,
-                  "name": "_indexFrom",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 113,
-                  "src": "2643:18:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 101,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "2643:7:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 104,
-                  "name": "_indexTo",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 113,
-                  "src": "2671:16:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 103,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "2671:7:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "2607:86:1"
-            },
-            "payable": false,
-            "returnParameters": {
-              "id": 112,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 108,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 113,
-                  "src": "2740:9:1",
+                  "scope": 80,
+                  "src": "2740:9:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1460,19 +1460,19 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 106,
+                      "id": 73,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
-                      "src": "2740:7:1",
+                      "src": "2740:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "id": 107,
+                    "id": 74,
                     "length": null,
                     "nodeType": "ArrayTypeName",
-                    "src": "2740:9:1",
+                    "src": "2740:9:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                       "typeString": "address[]"
@@ -1483,11 +1483,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 111,
+                  "id": 78,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 113,
-                  "src": "2751:9:1",
+                  "scope": 80,
+                  "src": "2751:9:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1496,19 +1496,19 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 109,
+                      "id": 76,
                       "name": "uint256",
                       "nodeType": "ElementaryTypeName",
-                      "src": "2751:7:1",
+                      "src": "2751:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "id": 110,
+                    "id": 77,
                     "length": null,
                     "nodeType": "ArrayTypeName",
-                    "src": "2751:9:1",
+                    "src": "2751:9:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
                       "typeString": "uint256[]"
@@ -1518,10 +1518,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2739:22:1"
+              "src": "2739:22:0"
             },
-            "scope": 128,
-            "src": "2581:181:1",
+            "scope": 95,
+            "src": "2581:181:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -1529,7 +1529,7 @@
           {
             "body": null,
             "documentation": "@dev Returns FT token holders amount of specified NFT\n@param _tokenId - Unique identifier of NFT",
-            "id": 120,
+            "id": 87,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1537,16 +1537,16 @@
             "name": "ftHoldersCount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 116,
+              "id": 83,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 115,
+                  "id": 82,
                   "name": "_tokenId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 120,
-                  "src": "2919:16:1",
+                  "scope": 87,
+                  "src": "2919:16:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1554,10 +1554,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 114,
+                    "id": 81,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2919:7:1",
+                    "src": "2919:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1567,20 +1567,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2918:18:1"
+              "src": "2918:18:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 119,
+              "id": 86,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 118,
+                  "id": 85,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 120,
-                  "src": "2982:7:1",
+                  "scope": 87,
+                  "src": "2982:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1588,10 +1588,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 117,
+                    "id": 84,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2982:7:1",
+                    "src": "2982:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1601,10 +1601,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2981:9:1"
+              "src": "2981:9:0"
             },
-            "scope": 128,
-            "src": "2895:96:1",
+            "scope": 95,
+            "src": "2895:96:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -1612,7 +1612,7 @@
           {
             "body": null,
             "documentation": "@dev Returns FT smart contract address of specified NFT\n@param _tokenId - Unique identifier of NFT",
-            "id": 127,
+            "id": 94,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1620,16 +1620,16 @@
             "name": "ftAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 123,
+              "id": 90,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 122,
+                  "id": 89,
                   "name": "_tokenId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 127,
-                  "src": "3145:16:1",
+                  "scope": 94,
+                  "src": "3145:16:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1637,10 +1637,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 121,
+                    "id": 88,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3145:7:1",
+                    "src": "3145:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1650,20 +1650,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "3144:18:1"
+              "src": "3144:18:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 126,
+              "id": 93,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 125,
+                  "id": 92,
                   "name": "_ftAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 127,
-                  "src": "3208:18:1",
+                  "scope": 94,
+                  "src": "3208:18:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1671,10 +1671,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 124,
+                    "id": 91,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3208:7:1",
+                    "src": "3208:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -1684,27 +1684,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "3207:20:1"
+              "src": "3207:20:0"
             },
-            "scope": 128,
-            "src": "3126:102:1",
+            "scope": 95,
+            "src": "3126:102:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 129,
-        "src": "321:2909:1"
+        "scope": 96,
+        "src": "321:2909:0"
       }
     ],
-    "src": "0:3234:1"
+    "src": "0:3234:0"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFT.sol",
       "exportedSymbols": {
         "IRFT": [
-          128
+          95
         ]
       }
     },
@@ -1718,60 +1718,60 @@
             ".24"
           ]
         },
-        "id": 34,
+        "id": 1,
         "name": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:24:0"
       },
       {
         "attributes": {
-          "SourceUnit": 2715,
+          "SourceUnit": 2754,
           "absolutePath": "openzeppelin-solidity/contracts/math/SafeMath.sol",
           "file": "openzeppelin-solidity/contracts/math/SafeMath.sol",
-          "scope": 129,
+          "scope": 96,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 35,
+        "id": 2,
         "name": "ImportDirective",
-        "src": "26:59:1"
+        "src": "26:59:0"
       },
       {
         "attributes": {
-          "SourceUnit": 377,
+          "SourceUnit": 311,
           "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTFull.sol",
           "file": "./IRFTNFTFull.sol",
-          "scope": 129,
+          "scope": 96,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 36,
+        "id": 3,
         "name": "ImportDirective",
-        "src": "86:27:1"
+        "src": "86:27:0"
       },
       {
         "attributes": {
           "contractDependencies": [
-            337,
-            364,
-            376,
-            399
+            271,
+            298,
+            310,
+            333
           ],
           "contractKind": "contract",
           "documentation": "@title RFT full interface\nThis interface implementing functionality to create RFT token\nthat has Non-Fungible structure and its value is supplied with Fungible Token\n(ERC-20 compatible)",
           "fullyImplemented": false,
           "linearizedBaseContracts": [
-            128,
-            376,
-            364,
-            399,
-            337
+            95,
+            310,
+            298,
+            333,
+            271
           ],
           "name": "IRFT",
-          "scope": 129
+          "scope": 96
         },
         "children": [
           {
@@ -1783,17 +1783,17 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "IRFTNFTFull",
-                  "referencedDeclaration": 376,
+                  "referencedDeclaration": 310,
                   "type": "contract IRFTNFTFull"
                 },
-                "id": 37,
+                "id": 4,
                 "name": "UserDefinedTypeName",
-                "src": "338:11:1"
+                "src": "338:11:0"
               }
             ],
-            "id": 38,
+            "id": 5,
             "name": "InheritanceSpecifier",
-            "src": "338:11:1"
+            "src": "338:11:0"
           },
           {
             "children": [
@@ -1801,26 +1801,26 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "SafeMath",
-                  "referencedDeclaration": 2714,
+                  "referencedDeclaration": 2753,
                   "type": "library SafeMath"
                 },
-                "id": 39,
+                "id": 6,
                 "name": "UserDefinedTypeName",
-                "src": "362:8:1"
+                "src": "362:8:0"
               },
               {
                 "attributes": {
                   "name": "uint256",
                   "type": "uint256"
                 },
-                "id": 40,
+                "id": 7,
                 "name": "ElementaryTypeName",
-                "src": "375:7:1"
+                "src": "375:7:0"
               }
             ],
-            "id": 41,
+            "id": 8,
             "name": "UsingForDirective",
-            "src": "356:27:1"
+            "src": "356:27:0"
           },
           {
             "attributes": {
@@ -1834,7 +1834,7 @@
               ],
               "name": "_createFT",
               "payable": false,
-              "scope": 128,
+              "scope": 95,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "internal"
@@ -1846,7 +1846,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_name",
-                      "scope": 58,
+                      "scope": 25,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "string",
@@ -1859,20 +1859,20 @@
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 42,
+                        "id": 9,
                         "name": "ElementaryTypeName",
-                        "src": "782:6:1"
+                        "src": "782:6:0"
                       }
                     ],
-                    "id": 43,
+                    "id": 10,
                     "name": "VariableDeclaration",
-                    "src": "782:12:1"
+                    "src": "782:12:0"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "_symbol",
-                      "scope": 58,
+                      "scope": 25,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "string",
@@ -1885,20 +1885,20 @@
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 44,
+                        "id": 11,
                         "name": "ElementaryTypeName",
-                        "src": "804:6:1"
+                        "src": "804:6:0"
                       }
                     ],
-                    "id": 45,
+                    "id": 12,
                     "name": "VariableDeclaration",
-                    "src": "804:14:1"
+                    "src": "804:14:0"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "_decimals",
-                      "scope": 58,
+                      "scope": 25,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1911,20 +1911,20 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 46,
+                        "id": 13,
                         "name": "ElementaryTypeName",
-                        "src": "828:7:1"
+                        "src": "828:7:0"
                       }
                     ],
-                    "id": 47,
+                    "id": 14,
                     "name": "VariableDeclaration",
-                    "src": "828:17:1"
+                    "src": "828:17:0"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "_tokenOwner",
-                      "scope": 58,
+                      "scope": 25,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -1937,20 +1937,443 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 48,
+                        "id": 15,
                         "name": "ElementaryTypeName",
-                        "src": "855:7:1"
+                        "src": "855:7:0"
                       }
                     ],
-                    "id": 49,
+                    "id": 16,
                     "name": "VariableDeclaration",
-                    "src": "855:19:1"
+                    "src": "855:19:0"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "_fungibleTokenSupply",
-                      "scope": 58,
+                      "scope": 25,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 17,
+                        "name": "ElementaryTypeName",
+                        "src": "884:7:0"
+                      }
+                    ],
+                    "id": 18,
+                    "name": "VariableDeclaration",
+                    "src": "884:28:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_tokenId",
+                      "scope": 25,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 19,
+                        "name": "ElementaryTypeName",
+                        "src": "922:7:0"
+                      }
+                    ],
+                    "id": 20,
+                    "name": "VariableDeclaration",
+                    "src": "922:16:0"
+                  }
+                ],
+                "id": 21,
+                "name": "ParameterList",
+                "src": "772:172:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 25,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 22,
+                        "name": "ElementaryTypeName",
+                        "src": "980:7:0"
+                      }
+                    ],
+                    "id": 23,
+                    "name": "VariableDeclaration",
+                    "src": "980:7:0"
+                  }
+                ],
+                "id": 24,
+                "name": "ParameterList",
+                "src": "979:9:0"
+              }
+            ],
+            "id": 25,
+            "name": "FunctionDefinition",
+            "src": "754:235:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "constant": false,
+              "documentation": "@dev Mint NFT token and create FT accordingly\n@param _name - Name for FT\n@param _symbol - Symbol for FT\n@param _decimals - Precision amount for FT\n@param _tokenOwner - Address of FT owner\n@param _fungibleTokenSupply - Max token supply for FT",
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "mint",
+              "payable": false,
+              "scope": 95,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_name",
+                      "scope": 40,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 26,
+                        "name": "ElementaryTypeName",
+                        "src": "1319:6:0"
+                      }
+                    ],
+                    "id": 27,
+                    "name": "VariableDeclaration",
+                    "src": "1319:12:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_symbol",
+                      "scope": 40,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 28,
+                        "name": "ElementaryTypeName",
+                        "src": "1341:6:0"
+                      }
+                    ],
+                    "id": 29,
+                    "name": "VariableDeclaration",
+                    "src": "1341:14:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_decimals",
+                      "scope": 40,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30,
+                        "name": "ElementaryTypeName",
+                        "src": "1365:7:0"
+                      }
+                    ],
+                    "id": 31,
+                    "name": "VariableDeclaration",
+                    "src": "1365:17:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_tokenOwner",
+                      "scope": 40,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 32,
+                        "name": "ElementaryTypeName",
+                        "src": "1392:7:0"
+                      }
+                    ],
+                    "id": 33,
+                    "name": "VariableDeclaration",
+                    "src": "1392:19:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_fungibleTokenSupply",
+                      "scope": 40,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 34,
+                        "name": "ElementaryTypeName",
+                        "src": "1421:7:0"
+                      }
+                    ],
+                    "id": 35,
+                    "name": "VariableDeclaration",
+                    "src": "1421:28:0"
+                  }
+                ],
+                "id": 36,
+                "name": "ParameterList",
+                "src": "1309:146:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 40,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 37,
+                        "name": "ElementaryTypeName",
+                        "src": "1489:7:0"
+                      }
+                    ],
+                    "id": 38,
+                    "name": "VariableDeclaration",
+                    "src": "1489:7:0"
+                  }
+                ],
+                "id": 39,
+                "name": "ParameterList",
+                "src": "1488:9:0"
+              }
+            ],
+            "id": 40,
+            "name": "FunctionDefinition",
+            "src": "1296:202:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "constant": false,
+              "documentation": "@dev Burn NFT and delete FT data\n@param _owner - owner address of NFT to burn\n@param _tokenId - Unique identifier of NFT",
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "burn",
+              "payable": false,
+              "scope": 95,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_owner",
+                      "scope": 49,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 41,
+                        "name": "ElementaryTypeName",
+                        "src": "1686:7:0"
+                      }
+                    ],
+                    "id": 42,
+                    "name": "VariableDeclaration",
+                    "src": "1686:14:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_tokenId",
+                      "scope": 49,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 43,
+                        "name": "ElementaryTypeName",
+                        "src": "1710:7:0"
+                      }
+                    ],
+                    "id": 44,
+                    "name": "VariableDeclaration",
+                    "src": "1710:16:0"
+                  }
+                ],
+                "id": 45,
+                "name": "ParameterList",
+                "src": "1676:56:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 49,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 46,
+                        "name": "ElementaryTypeName",
+                        "src": "1766:4:0"
+                      }
+                    ],
+                    "id": 47,
+                    "name": "VariableDeclaration",
+                    "src": "1766:4:0"
+                  }
+                ],
+                "id": 48,
+                "name": "ParameterList",
+                "src": "1765:6:0"
+              }
+            ],
+            "id": 49,
+            "name": "FunctionDefinition",
+            "src": "1663:109:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "constant": true,
+              "documentation": "@dev Returns value of selected NFT\n@param _tokenId - Unique identifier of NFT",
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "nftValue",
+              "payable": false,
+              "scope": 95,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_tokenId",
+                      "scope": 56,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1965,18 +2388,25 @@
                         },
                         "id": 50,
                         "name": "ElementaryTypeName",
-                        "src": "884:7:1"
+                        "src": "1913:7:0"
                       }
                     ],
                     "id": 51,
                     "name": "VariableDeclaration",
-                    "src": "884:28:1"
-                  },
+                    "src": "1913:16:0"
+                  }
+                ],
+                "id": 52,
+                "name": "ParameterList",
+                "src": "1903:32:0"
+              },
+              {
+                "children": [
                   {
                     "attributes": {
                       "constant": false,
-                      "name": "_tokenId",
-                      "scope": 58,
+                      "name": "",
+                      "scope": 56,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1989,72 +2419,39 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 52,
+                        "id": 53,
                         "name": "ElementaryTypeName",
-                        "src": "922:7:1"
+                        "src": "1983:7:0"
                       }
                     ],
-                    "id": 53,
+                    "id": 54,
                     "name": "VariableDeclaration",
-                    "src": "922:16:1"
+                    "src": "1983:7:0"
                   }
                 ],
-                "id": 54,
+                "id": 55,
                 "name": "ParameterList",
-                "src": "772:172:1"
-              },
-              {
-                "children": [
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "",
-                      "scope": 58,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "address",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "address",
-                          "type": "address"
-                        },
-                        "id": 55,
-                        "name": "ElementaryTypeName",
-                        "src": "980:7:1"
-                      }
-                    ],
-                    "id": 56,
-                    "name": "VariableDeclaration",
-                    "src": "980:7:1"
-                  }
-                ],
-                "id": 57,
-                "name": "ParameterList",
-                "src": "979:9:1"
+                "src": "1982:9:0"
               }
             ],
-            "id": 58,
+            "id": 56,
             "name": "FunctionDefinition",
-            "src": "754:235:1"
+            "src": "1886:106:0"
           },
           {
             "attributes": {
               "body": null,
-              "constant": false,
-              "documentation": "@dev Mint NFT token and create FT accordingly\n@param _name - Name for FT\n@param _symbol - Symbol for FT\n@param _decimals - Precision amount for FT\n@param _tokenOwner - Address of FT owner\n@param _fungibleTokenSupply - Max token supply for FT",
+              "constant": true,
+              "documentation": "@dev Returns FT token balance of specified NFT\n@param _holder - Holder address \n@param _tokenId - Unique identifier of NFT",
               "implemented": false,
               "isConstructor": false,
               "modifiers": [
                 null
               ],
-              "name": "mint",
+              "name": "ftHolderBalance",
               "payable": false,
-              "scope": 128,
-              "stateMutability": "nonpayable",
+              "scope": 95,
+              "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
             },
@@ -2064,60 +2461,8 @@
                   {
                     "attributes": {
                       "constant": false,
-                      "name": "_name",
-                      "scope": 73,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "string",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "string",
-                          "type": "string"
-                        },
-                        "id": 59,
-                        "name": "ElementaryTypeName",
-                        "src": "1319:6:1"
-                      }
-                    ],
-                    "id": 60,
-                    "name": "VariableDeclaration",
-                    "src": "1319:12:1"
-                  },
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "_symbol",
-                      "scope": 73,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "string",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "string",
-                          "type": "string"
-                        },
-                        "id": 61,
-                        "name": "ElementaryTypeName",
-                        "src": "1341:6:1"
-                      }
-                    ],
-                    "id": 62,
-                    "name": "VariableDeclaration",
-                    "src": "1341:14:1"
-                  },
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "_decimals",
-                      "scope": 73,
+                      "name": "_tokenId",
+                      "scope": 65,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -2130,20 +2475,20 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 63,
+                        "id": 57,
                         "name": "ElementaryTypeName",
-                        "src": "1365:7:1"
+                        "src": "2193:7:0"
                       }
                     ],
-                    "id": 64,
+                    "id": 58,
                     "name": "VariableDeclaration",
-                    "src": "1365:17:1"
+                    "src": "2193:16:0"
                   },
                   {
                     "attributes": {
                       "constant": false,
-                      "name": "_tokenOwner",
-                      "scope": 73,
+                      "name": "_holder",
+                      "scope": 65,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -2156,20 +2501,27 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 65,
+                        "id": 59,
                         "name": "ElementaryTypeName",
-                        "src": "1392:7:1"
+                        "src": "2219:7:0"
                       }
                     ],
-                    "id": 66,
+                    "id": 60,
                     "name": "VariableDeclaration",
-                    "src": "1392:19:1"
-                  },
+                    "src": "2219:15:0"
+                  }
+                ],
+                "id": 61,
+                "name": "ParameterList",
+                "src": "2183:57:0"
+              },
+              {
+                "children": [
                   {
                     "attributes": {
                       "constant": false,
-                      "name": "_fungibleTokenSupply",
-                      "scope": 73,
+                      "name": "",
+                      "scope": 65,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -2182,27 +2534,102 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 67,
+                        "id": 62,
                         "name": "ElementaryTypeName",
-                        "src": "1421:7:1"
+                        "src": "2289:7:0"
                       }
                     ],
-                    "id": 68,
+                    "id": 63,
                     "name": "VariableDeclaration",
-                    "src": "1421:28:1"
+                    "src": "2289:7:0"
                   }
                 ],
-                "id": 69,
+                "id": 64,
                 "name": "ParameterList",
-                "src": "1309:146:1"
-              },
+                "src": "2288:9:0"
+              }
+            ],
+            "id": 65,
+            "name": "FunctionDefinition",
+            "src": "2159:139:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "constant": true,
+              "documentation": "@dev Returns all FT token holders and their balances of specified NFT\n@param _tokenId - Unique identifier of NFT\n@param _indexFrom - Start index inside array of token holders\n@param _indexTo - End index inside array of token holders",
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "ftHoldersBalances",
+              "payable": false,
+              "scope": 95,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
               {
                 "children": [
                   {
                     "attributes": {
                       "constant": false,
-                      "name": "",
-                      "scope": 73,
+                      "name": "_tokenId",
+                      "scope": 80,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 66,
+                        "name": "ElementaryTypeName",
+                        "src": "2617:7:0"
+                      }
+                    ],
+                    "id": 67,
+                    "name": "VariableDeclaration",
+                    "src": "2617:16:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_indexFrom",
+                      "scope": 80,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 68,
+                        "name": "ElementaryTypeName",
+                        "src": "2643:7:0"
+                      }
+                    ],
+                    "id": 69,
+                    "name": "VariableDeclaration",
+                    "src": "2643:18:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_indexTo",
+                      "scope": 80,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -2217,99 +2644,17 @@
                         },
                         "id": 70,
                         "name": "ElementaryTypeName",
-                        "src": "1489:7:1"
+                        "src": "2671:7:0"
                       }
                     ],
                     "id": 71,
                     "name": "VariableDeclaration",
-                    "src": "1489:7:1"
+                    "src": "2671:16:0"
                   }
                 ],
                 "id": 72,
                 "name": "ParameterList",
-                "src": "1488:9:1"
-              }
-            ],
-            "id": 73,
-            "name": "FunctionDefinition",
-            "src": "1296:202:1"
-          },
-          {
-            "attributes": {
-              "body": null,
-              "constant": false,
-              "documentation": "@dev Burn NFT and delete FT data\n@param _owner - owner address of NFT to burn\n@param _tokenId - Unique identifier of NFT",
-              "implemented": false,
-              "isConstructor": false,
-              "modifiers": [
-                null
-              ],
-              "name": "burn",
-              "payable": false,
-              "scope": 128,
-              "stateMutability": "nonpayable",
-              "superFunction": null,
-              "visibility": "public"
-            },
-            "children": [
-              {
-                "children": [
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "_owner",
-                      "scope": 82,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "address",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "address",
-                          "type": "address"
-                        },
-                        "id": 74,
-                        "name": "ElementaryTypeName",
-                        "src": "1686:7:1"
-                      }
-                    ],
-                    "id": 75,
-                    "name": "VariableDeclaration",
-                    "src": "1686:14:1"
-                  },
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "_tokenId",
-                      "scope": 82,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "uint256",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
-                        "id": 76,
-                        "name": "ElementaryTypeName",
-                        "src": "1710:7:1"
-                      }
-                    ],
-                    "id": 77,
-                    "name": "VariableDeclaration",
-                    "src": "1710:16:1"
-                  }
-                ],
-                "id": 78,
-                "name": "ParameterList",
-                "src": "1676:56:1"
+                "src": "2607:86:0"
               },
               {
                 "children": [
@@ -2317,352 +2662,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 82,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "bool",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "bool",
-                          "type": "bool"
-                        },
-                        "id": 79,
-                        "name": "ElementaryTypeName",
-                        "src": "1766:4:1"
-                      }
-                    ],
-                    "id": 80,
-                    "name": "VariableDeclaration",
-                    "src": "1766:4:1"
-                  }
-                ],
-                "id": 81,
-                "name": "ParameterList",
-                "src": "1765:6:1"
-              }
-            ],
-            "id": 82,
-            "name": "FunctionDefinition",
-            "src": "1663:109:1"
-          },
-          {
-            "attributes": {
-              "body": null,
-              "constant": true,
-              "documentation": "@dev Returns value of selected NFT\n@param _tokenId - Unique identifier of NFT",
-              "implemented": false,
-              "isConstructor": false,
-              "modifiers": [
-                null
-              ],
-              "name": "nftValue",
-              "payable": false,
-              "scope": 128,
-              "stateMutability": "view",
-              "superFunction": null,
-              "visibility": "public"
-            },
-            "children": [
-              {
-                "children": [
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "_tokenId",
-                      "scope": 89,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "uint256",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
-                        "id": 83,
-                        "name": "ElementaryTypeName",
-                        "src": "1913:7:1"
-                      }
-                    ],
-                    "id": 84,
-                    "name": "VariableDeclaration",
-                    "src": "1913:16:1"
-                  }
-                ],
-                "id": 85,
-                "name": "ParameterList",
-                "src": "1903:32:1"
-              },
-              {
-                "children": [
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "",
-                      "scope": 89,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "uint256",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
-                        "id": 86,
-                        "name": "ElementaryTypeName",
-                        "src": "1983:7:1"
-                      }
-                    ],
-                    "id": 87,
-                    "name": "VariableDeclaration",
-                    "src": "1983:7:1"
-                  }
-                ],
-                "id": 88,
-                "name": "ParameterList",
-                "src": "1982:9:1"
-              }
-            ],
-            "id": 89,
-            "name": "FunctionDefinition",
-            "src": "1886:106:1"
-          },
-          {
-            "attributes": {
-              "body": null,
-              "constant": true,
-              "documentation": "@dev Returns FT token balance of specified NFT\n@param _holder - Holder address \n@param _tokenId - Unique identifier of NFT",
-              "implemented": false,
-              "isConstructor": false,
-              "modifiers": [
-                null
-              ],
-              "name": "ftHolderBalance",
-              "payable": false,
-              "scope": 128,
-              "stateMutability": "view",
-              "superFunction": null,
-              "visibility": "public"
-            },
-            "children": [
-              {
-                "children": [
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "_tokenId",
-                      "scope": 98,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "uint256",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
-                        "id": 90,
-                        "name": "ElementaryTypeName",
-                        "src": "2193:7:1"
-                      }
-                    ],
-                    "id": 91,
-                    "name": "VariableDeclaration",
-                    "src": "2193:16:1"
-                  },
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "_holder",
-                      "scope": 98,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "address",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "address",
-                          "type": "address"
-                        },
-                        "id": 92,
-                        "name": "ElementaryTypeName",
-                        "src": "2219:7:1"
-                      }
-                    ],
-                    "id": 93,
-                    "name": "VariableDeclaration",
-                    "src": "2219:15:1"
-                  }
-                ],
-                "id": 94,
-                "name": "ParameterList",
-                "src": "2183:57:1"
-              },
-              {
-                "children": [
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "",
-                      "scope": 98,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "uint256",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
-                        "id": 95,
-                        "name": "ElementaryTypeName",
-                        "src": "2289:7:1"
-                      }
-                    ],
-                    "id": 96,
-                    "name": "VariableDeclaration",
-                    "src": "2289:7:1"
-                  }
-                ],
-                "id": 97,
-                "name": "ParameterList",
-                "src": "2288:9:1"
-              }
-            ],
-            "id": 98,
-            "name": "FunctionDefinition",
-            "src": "2159:139:1"
-          },
-          {
-            "attributes": {
-              "body": null,
-              "constant": true,
-              "documentation": "@dev Returns all FT token holders and their balances of specified NFT\n@param _tokenId - Unique identifier of NFT\n@param _indexFrom - Start index inside array of token holders\n@param _indexTo - End index inside array of token holders",
-              "implemented": false,
-              "isConstructor": false,
-              "modifiers": [
-                null
-              ],
-              "name": "ftHoldersBalances",
-              "payable": false,
-              "scope": 128,
-              "stateMutability": "view",
-              "superFunction": null,
-              "visibility": "public"
-            },
-            "children": [
-              {
-                "children": [
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "_tokenId",
-                      "scope": 113,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "uint256",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
-                        "id": 99,
-                        "name": "ElementaryTypeName",
-                        "src": "2617:7:1"
-                      }
-                    ],
-                    "id": 100,
-                    "name": "VariableDeclaration",
-                    "src": "2617:16:1"
-                  },
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "_indexFrom",
-                      "scope": 113,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "uint256",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
-                        "id": 101,
-                        "name": "ElementaryTypeName",
-                        "src": "2643:7:1"
-                      }
-                    ],
-                    "id": 102,
-                    "name": "VariableDeclaration",
-                    "src": "2643:18:1"
-                  },
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "_indexTo",
-                      "scope": 113,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "uint256",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
-                        "id": 103,
-                        "name": "ElementaryTypeName",
-                        "src": "2671:7:1"
-                      }
-                    ],
-                    "id": 104,
-                    "name": "VariableDeclaration",
-                    "src": "2671:16:1"
-                  }
-                ],
-                "id": 105,
-                "name": "ParameterList",
-                "src": "2607:86:1"
-              },
-              {
-                "children": [
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "",
-                      "scope": 113,
+                      "scope": 80,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address[]",
@@ -2681,25 +2681,25 @@
                               "name": "address",
                               "type": "address"
                             },
-                            "id": 106,
+                            "id": 73,
                             "name": "ElementaryTypeName",
-                            "src": "2740:7:1"
+                            "src": "2740:7:0"
                           }
                         ],
-                        "id": 107,
+                        "id": 74,
                         "name": "ArrayTypeName",
-                        "src": "2740:9:1"
+                        "src": "2740:9:0"
                       }
                     ],
-                    "id": 108,
+                    "id": 75,
                     "name": "VariableDeclaration",
-                    "src": "2740:9:1"
+                    "src": "2740:9:0"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 113,
+                      "scope": 80,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256[]",
@@ -2718,29 +2718,29 @@
                               "name": "uint256",
                               "type": "uint256"
                             },
-                            "id": 109,
+                            "id": 76,
                             "name": "ElementaryTypeName",
-                            "src": "2751:7:1"
+                            "src": "2751:7:0"
                           }
                         ],
-                        "id": 110,
+                        "id": 77,
                         "name": "ArrayTypeName",
-                        "src": "2751:9:1"
+                        "src": "2751:9:0"
                       }
                     ],
-                    "id": 111,
+                    "id": 78,
                     "name": "VariableDeclaration",
-                    "src": "2751:9:1"
+                    "src": "2751:9:0"
                   }
                 ],
-                "id": 112,
+                "id": 79,
                 "name": "ParameterList",
-                "src": "2739:22:1"
+                "src": "2739:22:0"
               }
             ],
-            "id": 113,
+            "id": 80,
             "name": "FunctionDefinition",
-            "src": "2581:181:1"
+            "src": "2581:181:0"
           },
           {
             "attributes": {
@@ -2754,7 +2754,7 @@
               ],
               "name": "ftHoldersCount",
               "payable": false,
-              "scope": 128,
+              "scope": 95,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
@@ -2766,7 +2766,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_tokenId",
-                      "scope": 120,
+                      "scope": 87,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -2779,19 +2779,19 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 114,
+                        "id": 81,
                         "name": "ElementaryTypeName",
-                        "src": "2919:7:1"
+                        "src": "2919:7:0"
                       }
                     ],
-                    "id": 115,
+                    "id": 82,
                     "name": "VariableDeclaration",
-                    "src": "2919:16:1"
+                    "src": "2919:16:0"
                   }
                 ],
-                "id": 116,
+                "id": 83,
                 "name": "ParameterList",
-                "src": "2918:18:1"
+                "src": "2918:18:0"
               },
               {
                 "children": [
@@ -2799,7 +2799,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 120,
+                      "scope": 87,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -2812,24 +2812,24 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 117,
+                        "id": 84,
                         "name": "ElementaryTypeName",
-                        "src": "2982:7:1"
+                        "src": "2982:7:0"
                       }
                     ],
-                    "id": 118,
+                    "id": 85,
                     "name": "VariableDeclaration",
-                    "src": "2982:7:1"
+                    "src": "2982:7:0"
                   }
                 ],
-                "id": 119,
+                "id": 86,
                 "name": "ParameterList",
-                "src": "2981:9:1"
+                "src": "2981:9:0"
               }
             ],
-            "id": 120,
+            "id": 87,
             "name": "FunctionDefinition",
-            "src": "2895:96:1"
+            "src": "2895:96:0"
           },
           {
             "attributes": {
@@ -2843,7 +2843,7 @@
               ],
               "name": "ftAddress",
               "payable": false,
-              "scope": 128,
+              "scope": 95,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
@@ -2855,7 +2855,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_tokenId",
-                      "scope": 127,
+                      "scope": 94,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -2868,19 +2868,19 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 121,
+                        "id": 88,
                         "name": "ElementaryTypeName",
-                        "src": "3145:7:1"
+                        "src": "3145:7:0"
                       }
                     ],
-                    "id": 122,
+                    "id": 89,
                     "name": "VariableDeclaration",
-                    "src": "3145:16:1"
+                    "src": "3145:16:0"
                   }
                 ],
-                "id": 123,
+                "id": 90,
                 "name": "ParameterList",
-                "src": "3144:18:1"
+                "src": "3144:18:0"
               },
               {
                 "children": [
@@ -2888,7 +2888,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_ftAddress",
-                      "scope": 127,
+                      "scope": 94,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -2901,34 +2901,34 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 124,
+                        "id": 91,
                         "name": "ElementaryTypeName",
-                        "src": "3208:7:1"
+                        "src": "3208:7:0"
                       }
                     ],
-                    "id": 125,
+                    "id": 92,
                     "name": "VariableDeclaration",
-                    "src": "3208:18:1"
+                    "src": "3208:18:0"
                   }
                 ],
-                "id": 126,
+                "id": 93,
                 "name": "ParameterList",
-                "src": "3207:20:1"
+                "src": "3207:20:0"
               }
             ],
-            "id": 127,
+            "id": 94,
             "name": "FunctionDefinition",
-            "src": "3126:102:1"
+            "src": "3126:102:0"
           }
         ],
-        "id": 128,
+        "id": 95,
         "name": "ContractDefinition",
-        "src": "321:2909:1"
+        "src": "321:2909:0"
       }
     ],
-    "id": 129,
+    "id": 96,
     "name": "SourceUnit",
-    "src": "0:3234:1"
+    "src": "0:3234:0"
   },
   "compiler": {
     "name": "solc",
@@ -2936,7 +2936,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-08T14:55:07.467Z",
+  "updatedAt": "2021-03-09T13:44:50.016Z",
   "devdoc": {
     "methods": {
       "approve(address,uint256)": {

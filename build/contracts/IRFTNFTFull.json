@@ -368,14 +368,14 @@
     "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTFull.sol",
     "exportedSymbols": {
       "IRFTNFTFull": [
-        376
+        310
       ]
     },
-    "id": 377,
+    "id": 311,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 366,
+        "id": 300,
         "literals": [
           "solidity",
           "^",
@@ -383,38 +383,38 @@
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:8"
+        "src": "0:24:5"
       },
       {
         "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFT.sol",
         "file": "./IRFTNFT.sol",
-        "id": 367,
+        "id": 301,
         "nodeType": "ImportDirective",
-        "scope": 377,
-        "sourceUnit": 338,
-        "src": "26:23:8",
+        "scope": 311,
+        "sourceUnit": 272,
+        "src": "26:23:5",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTMetadata.sol",
         "file": "./IRFTNFTMetadata.sol",
-        "id": 368,
+        "id": 302,
         "nodeType": "ImportDirective",
-        "scope": 377,
-        "sourceUnit": 400,
-        "src": "50:31:8",
+        "scope": 311,
+        "sourceUnit": 334,
+        "src": "50:31:5",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTEnumerable.sol",
         "file": "./IRFTNFTEnumerable.sol",
-        "id": 369,
+        "id": 303,
         "nodeType": "ImportDirective",
-        "scope": 377,
-        "sourceUnit": 365,
-        "src": "82:33:8",
+        "scope": 311,
+        "sourceUnit": 299,
+        "src": "82:33:5",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -424,87 +424,87 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 370,
+              "id": 304,
               "name": "IRFTNFT",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 337,
-              "src": "276:7:8",
+              "referencedDeclaration": 271,
+              "src": "276:7:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IRFTNFT_$337",
+                "typeIdentifier": "t_contract$_IRFTNFT_$271",
                 "typeString": "contract IRFTNFT"
               }
             },
-            "id": 371,
+            "id": 305,
             "nodeType": "InheritanceSpecifier",
-            "src": "276:7:8"
+            "src": "276:7:5"
           },
           {
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 372,
+              "id": 306,
               "name": "IRFTNFTMetadata",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 399,
-              "src": "285:15:8",
+              "referencedDeclaration": 333,
+              "src": "285:15:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IRFTNFTMetadata_$399",
+                "typeIdentifier": "t_contract$_IRFTNFTMetadata_$333",
                 "typeString": "contract IRFTNFTMetadata"
               }
             },
-            "id": 373,
+            "id": 307,
             "nodeType": "InheritanceSpecifier",
-            "src": "285:15:8"
+            "src": "285:15:5"
           },
           {
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 374,
+              "id": 308,
               "name": "IRFTNFTEnumerable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 364,
-              "src": "302:17:8",
+              "referencedDeclaration": 298,
+              "src": "302:17:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IRFTNFTEnumerable_$364",
+                "typeIdentifier": "t_contract$_IRFTNFTEnumerable_$298",
                 "typeString": "contract IRFTNFTEnumerable"
               }
             },
-            "id": 375,
+            "id": 309,
             "nodeType": "InheritanceSpecifier",
-            "src": "302:17:8"
+            "src": "302:17:5"
           }
         ],
         "contractDependencies": [
-          337,
-          364,
-          399
+          271,
+          298,
+          333
         ],
         "contractKind": "contract",
         "documentation": "@title RFT Non-Fungible Token interface, that is supplied with Fungible Token\n@notice Non-Fungible Token full interface ",
         "fullyImplemented": false,
-        "id": 376,
+        "id": 310,
         "linearizedBaseContracts": [
-          376,
-          364,
-          399,
-          337
+          310,
+          298,
+          333,
+          271
         ],
         "name": "IRFTNFTFull",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 377,
-        "src": "252:70:8"
+        "scope": 311,
+        "src": "252:70:5"
       }
     ],
-    "src": "0:322:8"
+    "src": "0:322:5"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTFull.sol",
       "exportedSymbols": {
         "IRFTNFTFull": [
-          376
+          310
         ]
       }
     },
@@ -518,76 +518,76 @@
             ".24"
           ]
         },
-        "id": 366,
+        "id": 300,
         "name": "PragmaDirective",
-        "src": "0:24:8"
+        "src": "0:24:5"
       },
       {
         "attributes": {
-          "SourceUnit": 338,
+          "SourceUnit": 272,
           "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFT.sol",
           "file": "./IRFTNFT.sol",
-          "scope": 377,
+          "scope": 311,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 367,
+        "id": 301,
         "name": "ImportDirective",
-        "src": "26:23:8"
+        "src": "26:23:5"
       },
       {
         "attributes": {
-          "SourceUnit": 400,
+          "SourceUnit": 334,
           "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTMetadata.sol",
           "file": "./IRFTNFTMetadata.sol",
-          "scope": 377,
+          "scope": 311,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 368,
+        "id": 302,
         "name": "ImportDirective",
-        "src": "50:31:8"
+        "src": "50:31:5"
       },
       {
         "attributes": {
-          "SourceUnit": 365,
+          "SourceUnit": 299,
           "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTEnumerable.sol",
           "file": "./IRFTNFTEnumerable.sol",
-          "scope": 377,
+          "scope": 311,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 369,
+        "id": 303,
         "name": "ImportDirective",
-        "src": "82:33:8"
+        "src": "82:33:5"
       },
       {
         "attributes": {
           "contractDependencies": [
-            337,
-            364,
-            399
+            271,
+            298,
+            333
           ],
           "contractKind": "contract",
           "documentation": "@title RFT Non-Fungible Token interface, that is supplied with Fungible Token\n@notice Non-Fungible Token full interface ",
           "fullyImplemented": false,
           "linearizedBaseContracts": [
-            376,
-            364,
-            399,
-            337
+            310,
+            298,
+            333,
+            271
           ],
           "name": "IRFTNFTFull",
           "nodes": [
             null
           ],
-          "scope": 377
+          "scope": 311
         },
         "children": [
           {
@@ -599,17 +599,17 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "IRFTNFT",
-                  "referencedDeclaration": 337,
+                  "referencedDeclaration": 271,
                   "type": "contract IRFTNFT"
                 },
-                "id": 370,
+                "id": 304,
                 "name": "UserDefinedTypeName",
-                "src": "276:7:8"
+                "src": "276:7:5"
               }
             ],
-            "id": 371,
+            "id": 305,
             "name": "InheritanceSpecifier",
-            "src": "276:7:8"
+            "src": "276:7:5"
           },
           {
             "attributes": {
@@ -620,17 +620,17 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "IRFTNFTMetadata",
-                  "referencedDeclaration": 399,
+                  "referencedDeclaration": 333,
                   "type": "contract IRFTNFTMetadata"
                 },
-                "id": 372,
+                "id": 306,
                 "name": "UserDefinedTypeName",
-                "src": "285:15:8"
+                "src": "285:15:5"
               }
             ],
-            "id": 373,
+            "id": 307,
             "name": "InheritanceSpecifier",
-            "src": "285:15:8"
+            "src": "285:15:5"
           },
           {
             "attributes": {
@@ -641,27 +641,27 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "IRFTNFTEnumerable",
-                  "referencedDeclaration": 364,
+                  "referencedDeclaration": 298,
                   "type": "contract IRFTNFTEnumerable"
                 },
-                "id": 374,
+                "id": 308,
                 "name": "UserDefinedTypeName",
-                "src": "302:17:8"
+                "src": "302:17:5"
               }
             ],
-            "id": 375,
+            "id": 309,
             "name": "InheritanceSpecifier",
-            "src": "302:17:8"
+            "src": "302:17:5"
           }
         ],
-        "id": 376,
+        "id": 310,
         "name": "ContractDefinition",
-        "src": "252:70:8"
+        "src": "252:70:5"
       }
     ],
-    "id": 377,
+    "id": 311,
     "name": "SourceUnit",
-    "src": "0:322:8"
+    "src": "0:322:5"
   },
   "compiler": {
     "name": "solc",
@@ -669,7 +669,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-08T14:55:07.470Z",
+  "updatedAt": "2021-03-09T13:44:50.025Z",
   "devdoc": {
     "methods": {
       "approve(address,uint256)": {

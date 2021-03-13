@@ -1,4 +1,4 @@
-pragma solidity 0.4.24;
+pragma solidity >=0.6.0 <0.8.0;
 
 /**
  * @title RFT Fungible Token interface (ERC-20 compatible)

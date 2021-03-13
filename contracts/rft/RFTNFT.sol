@@ -1,15 +1,15 @@
-pragma solidity ^0.4.24;
+pragma solidity >=0.6.0 <0.8.0;
 
-import 'openzeppelin-solidity/contracts/math/SafeMath.sol';
-import 'openzeppelin-solidity/contracts/AddressUtils.sol';
-import 'openzeppelin-solidity/contracts/introspection/SupportsInterfaceWithLookup.sol';
+import '../@openzeppelin/contracts/math/SafeMath.sol';
+import '../@openzeppelin/contracts/utils/Address.sol';
+import '../@openzeppelin/contracts/introspection/ERC165.sol';
 import './IRFTNFT.sol';
 import './IRFTNFTReceiver.sol';
 
 
-contract RFTNFT is SupportsInterfaceWithLookup, IRFTNFT {
+contract RFTNFT is ERC165, IRFTNFT {
     using SafeMath for uint256;
-    using AddressUtils for address;
+    using Address for address;
 
     // Equals to `bytes4(keccak256("onRFTReceived(address,address,uint256,bytes)"))`
     // which can be also obtained as `IRFTNFTReceiver(0).onRFTReceived.selector`

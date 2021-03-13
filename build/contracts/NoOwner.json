@@ -1,0 +1,501 @@
+{
+  "contractName": "NoOwner",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "reclaimToken",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_contractAddr",
+          "type": "address"
+        }
+      ],
+      "name": "reclaimContract",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "reclaimEther",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint256"
+        },
+        {
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "tokenFallback",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipRenounced",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"_token\",\"type\":\"address\"}],\"name\":\"reclaimToken\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_contractAddr\",\"type\":\"address\"}],\"name\":\"reclaimContract\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"reclaimEther\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_from\",\"type\":\"address\"},{\"name\":\"_value\",\"type\":\"uint256\"},{\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"tokenFallback\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"fallback\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"}],\"name\":\"OwnershipRenounced\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Remco Bloemen <remco@2\\u03c0.com>\",\"methods\":{\"reclaimContract(address)\":{\"details\":\"Reclaim ownership of Ownable contracts\",\"params\":{\"_contractAddr\":\"The address of the Ownable to be reclaimed.\"}},\"reclaimEther()\":{\"details\":\"Transfer all Ether held by the contract to the owner.\"},\"reclaimToken(address)\":{\"details\":\"Reclaim all ERC20Basic compatible tokens\",\"params\":{\"_token\":\"ERC20Basic The address of the token contract\"}},\"renounceOwnership()\":{\"details\":\"Allows the current owner to relinquish control of the contract.\"},\"tokenFallback(address,uint256,bytes)\":{\"details\":\"Reject all ERC223 compatible tokens\",\"params\":{\"_data\":\"Bytes The data passed from the caller.\",\"_from\":\"address The address that is transferring the tokens\",\"_value\":\"uint256 the amount of the specified token\"}},\"transferOwnership(address)\":{\"details\":\"Allows the current owner to transfer control of the contract to a newOwner.\",\"params\":{\"_newOwner\":\"The address to transfer ownership to.\"}}},\"title\":\"Base contract for contracts that should not own things.\"},\"userdoc\":{\"methods\":{\"renounceOwnership()\":{\"notice\":\"Renouncing to ownership will leave the contract without an owner. It will not be possible to call the functions with the `onlyOwner` modifier anymore.\"}}}},\"settings\":{\"compilationTarget\":{\"/home/juuzou/Documents/RFT_contracts/contracts/contracts/ownership/NoOwner.sol\":\"NoOwner\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/juuzou/Documents/RFT_contracts/contracts/contracts/ownership/CanReclaimToken.sol\":{\"keccak256\":\"0xe5b7c3ad4c5ec2b5db23ccbfe115df2daf60bacbd8300af9d7d64f1e55f5cc87\",\"urls\":[\"bzzr://108d61e64822b59ecc9de5e61ebf013dcfd9a2eb4825bc95d27c476500769f43\"]},\"/home/juuzou/Documents/RFT_contracts/contracts/contracts/ownership/HasNoContracts.sol\":{\"keccak256\":\"0x42e8f8870b1b1191527dad66da1b6522b79a5e8bb13071ebc3251d6abb188d73\",\"urls\":[\"bzzr://f6962dcf438b3d2fd9e105650fe4a1f315f0ad200ae44780b8798fc6fc539601\"]},\"/home/juuzou/Documents/RFT_contracts/contracts/contracts/ownership/HasNoEther.sol\":{\"keccak256\":\"0xb11cc0d5a10c1a1f1c84c0c2f4d82ea84966095004336f65c1d023302f267196\",\"urls\":[\"bzzr://c45d7ef1086d2206632ab01da25a5e0192f87f0269cf1c309c3c102b5cfa8f3a\"]},\"/home/juuzou/Documents/RFT_contracts/contracts/contracts/ownership/HasNoTokens.sol\":{\"keccak256\":\"0x4d13bbaaec75d7f79fe2f38da0dee340739a723bdc422d5b2c0dc3a4741e92c2\",\"urls\":[\"bzzr://55d0ccf09e108bf0070ccb62676e14c7577ca29575d8ee76f1995f541c745d73\"]},\"/home/juuzou/Documents/RFT_contracts/contracts/contracts/ownership/NoOwner.sol\":{\"keccak256\":\"0x1fabe9256fdf661bbc832a4d4cfa1938d1799be5fd3fb08b49a67bbb731cc2c0\",\"urls\":[\"bzzr://8ba794b5ac62a6ff956eb61ab1a70710e6931622ed92f4e0519033c65b5ba7cd\"]},\"/home/juuzou/Documents/RFT_contracts/contracts/contracts/ownership/Ownable.sol\":{\"keccak256\":\"0x84c7090c27cf3657b73d9e26b6b316975fa0bd233b8169f254de0c3b3acfaefc\",\"urls\":[\"bzzr://b983355647976c1daa5de581a1b6a41be9c5adc17cce257b8679649db78f8a11\"]},\"/home/juuzou/Documents/RFT_contracts/contracts/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0xd5feb2643c87547e65b8d6f1af02539b1dee1ad53046945e237eaa8ba649c93b\",\"urls\":[\"bzzr://69768215a261b30a376a901b83b1e6716e3916c9fd791ac67450c283e62212ad\"]},\"/home/juuzou/Documents/RFT_contracts/contracts/contracts/token/ERC20/ERC20Basic.sol\":{\"keccak256\":\"0x516a17244073b518096ced7c8c94924cb29746ef0a4b6cc6cde125ac0406a419\",\"urls\":[\"bzzr://7addb1b5cad767651b9bcd688ba5b08769c1f3b70a470e34752a7717756d090d\"]},\"/home/juuzou/Documents/RFT_contracts/contracts/contracts/token/ERC20/SafeERC20.sol\":{\"keccak256\":\"0x06c65278852e6aa6f6b00106a2ef37b4586c0af884c993704bcd34880a000f79\",\"urls\":[\"bzzr://fa8fd60875a3345a0240c2bcda76e0dd6dfec45525fa1a9ec6eed658f0c1d64e\"]}},\"version\":1}",
+  "bytecode": "0x6080604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060003414151561005357600080fd5b610985806100626000396000f300608060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317ffc320146100925780632aed7f3f146100d5578063715018a6146101185780638da5cb5b1461012f5780639f727c2714610186578063c0ee0b8a1461019d578063f2fde38b14610202575b34801561008f57600080fd5b50005b34801561009e57600080fd5b506100d3600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610245565b005b3480156100e157600080fd5b50610116600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103ca565b005b34801561012457600080fd5b5061012d610502565b005b34801561013b57600080fd5b50610144610604565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561019257600080fd5b5061019b610629565b005b3480156101a957600080fd5b50610200600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190803590602001908201803590602001919091929391929390505050610705565b005b34801561020e57600080fd5b50610243600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061070a565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156102a257600080fd5b8173ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b15801561033d57600080fd5b505af1158015610351573d6000803e3d6000fd5b505050506040513d602081101561036757600080fd5b810190808051906020019092919050505090506103c66000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16828473ffffffffffffffffffffffffffffffffffffffff166107719092919063ffffffff16565b5050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561042757600080fd5b8190508073ffffffffffffffffffffffffffffffffffffffff1663f2fde38b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff166040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b1580156104e657600080fd5b505af11580156104fa573d6000803e3d6000fd5b505050505050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561055d57600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167ff8df31144d9c2f0f6b59d69b8b98abd5459d07f2742c4df920b25aae33c6482060405160405180910390a260008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561068457600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050158015610702573d6000803e3d6000fd5b50565b600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561076557600080fd5b61076e8161085f565b50565b8273ffffffffffffffffffffffffffffffffffffffff1663a9059cbb83836040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561081457600080fd5b505af1158015610828573d6000803e3d6000fd5b505050506040513d602081101561083e57600080fd5b8101908080519060200190929190505050151561085a57600080fd5b505050565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561089b57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a723058201aff8d1512c5b1ba76b568ebd1b32c7910ac074221464940502dc0f9651fffa20029",
+  "deployedBytecode": "0x608060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317ffc320146100925780632aed7f3f146100d5578063715018a6146101185780638da5cb5b1461012f5780639f727c2714610186578063c0ee0b8a1461019d578063f2fde38b14610202575b34801561008f57600080fd5b50005b34801561009e57600080fd5b506100d3600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610245565b005b3480156100e157600080fd5b50610116600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103ca565b005b34801561012457600080fd5b5061012d610502565b005b34801561013b57600080fd5b50610144610604565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561019257600080fd5b5061019b610629565b005b3480156101a957600080fd5b50610200600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190803590602001908201803590602001919091929391929390505050610705565b005b34801561020e57600080fd5b50610243600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061070a565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156102a257600080fd5b8173ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b15801561033d57600080fd5b505af1158015610351573d6000803e3d6000fd5b505050506040513d602081101561036757600080fd5b810190808051906020019092919050505090506103c66000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16828473ffffffffffffffffffffffffffffffffffffffff166107719092919063ffffffff16565b5050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561042757600080fd5b8190508073ffffffffffffffffffffffffffffffffffffffff1663f2fde38b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff166040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b1580156104e657600080fd5b505af11580156104fa573d6000803e3d6000fd5b505050505050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561055d57600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167ff8df31144d9c2f0f6b59d69b8b98abd5459d07f2742c4df920b25aae33c6482060405160405180910390a260008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561068457600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050158015610702573d6000803e3d6000fd5b50565b600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561076557600080fd5b61076e8161085f565b50565b8273ffffffffffffffffffffffffffffffffffffffff1663a9059cbb83836040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561081457600080fd5b505af1158015610828573d6000803e3d6000fd5b505050506040513d602081101561083e57600080fd5b8101908080519060200190929190505050151561085a57600080fd5b505050565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561089b57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a723058201aff8d1512c5b1ba76b568ebd1b32c7910ac074221464940502dc0f9651fffa20029",
+  "sourceMap": "389:63:37:-;;;575:10:38;567:5;;:18;;;;;;;;;;;;;;;;;;971:1:34;958:9;:14;950:23;;;;;;;;389:63:37;;;;;;",
+  "deployedSourceMap": "389:63:37:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;389:63:37;;599:152:29;;8:9:-1;5:2;;;30:1;27;20:12;5:2;599:152:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;482:166:33;;8:9:-1;5:2;;;30:1;27;20:12;5:2;482:166:33;;;;;;;;;;;;;;;;;;;;;;;;;;;;1001:111:38;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1001:111:38;;;;;;238:20;;8:9:-1;5:2;;;30:1;27;20:12;5:2;238:20:38;;;;;;;;;;;;;;;;;;;;;;;;;;;1189:91:34;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1189:91:34;;;;;;637:160:35;;8:9:-1;5:2;;;30:1;27;20:12;5:2;637:160:35;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1274:103:38;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1274:103:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;599:152:29;665:15;719:5:38;;;;;;;;;;;705:19;;:10;:19;;;697:28;;;;;;;;683:6:29;:16;;;700:4;683:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;683:22:29;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;683:22:29;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;683:22:29;;;;;;;;;;;;;;;;665:40;;711:35;731:5;;;;;;;;;;;738:7;711:6;:19;;;;:35;;;;;:::i;:::-;599:152;;:::o;482:166:33:-;555:20;719:5:38;;;;;;;;;;;705:19;;:10;:19;;;697:28;;;;;;;;586:13:33;555:45;;606:12;:30;;;637:5;;;;;;;;;;;606:37;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;606:37:33;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;606:37:33;;;;482:166;;:::o;1001:111:38:-;719:5;;;;;;;;;;;705:19;;:10;:19;;;697:28;;;;;;;;1077:5;;;;;;;;;;;1058:25;;;;;;;;;;;;1105:1;1089:5;;:18;;;;;;;;;;;;;;;;;;1001:111::o;238:20::-;;;;;;;;;;;;;:::o;1189:91:34:-;719:5:38;;;;;;;;;;;705:19;;:10;:19;;;697:28;;;;;;;;1238:5:34;;;;;;;;;;;:14;;:37;1261:4;1253:21;;;1238:37;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1238:37:34;1189:91::o;637:160:35:-;784:8;;;1274:103:38;719:5;;;;;;;;;;;705:19;;:10;:19;;;697:28;;;;;;;;1343:29;1362:9;1343:18;:29::i;:::-;1274:103;:::o;368:149:55:-;483:6;:15;;;499:3;504:6;483:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;483:28:55;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;483:28:55;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;483:28:55;;;;;;;;;;;;;;;;475:37;;;;;;;;368:149;;;:::o;1512:171:38:-;1603:1;1582:23;;:9;:23;;;;1574:32;;;;;;;;1645:9;1617:38;;1638:5;;;;;;;;;;;1617:38;;;;;;;;;;;;1669:9;1661:5;;:17;;;;;;;;;;;;;;;;;;1512:171;:::o",
+  "source": "pragma solidity ^0.4.24;\n\nimport \"./HasNoEther.sol\";\nimport \"./HasNoTokens.sol\";\nimport \"./HasNoContracts.sol\";\n\n\n/**\n * @title Base contract for contracts that should not own things.\n * @author Remco Bloemen <remco@2π.com>\n * @dev Solves a class of errors where a contract accidentally becomes owner of Ether, Tokens or\n * Owned contracts. See respective base contracts for details.\n */\ncontract NoOwner is HasNoEther, HasNoTokens, HasNoContracts {\n}\n",
+  "sourcePath": "/home/juuzou/Documents/RFT_contracts/contracts/contracts/ownership/NoOwner.sol",
+  "ast": {
+    "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/contracts/ownership/NoOwner.sol",
+    "exportedSymbols": {
+      "NoOwner": [
+        2768
+      ]
+    },
+    "id": 2769,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2758,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:37"
+      },
+      {
+        "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/contracts/ownership/HasNoEther.sol",
+        "file": "./HasNoEther.sol",
+        "id": 2759,
+        "nodeType": "ImportDirective",
+        "scope": 2769,
+        "sourceUnit": 2508,
+        "src": "26:26:37",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/contracts/ownership/HasNoTokens.sol",
+        "file": "./HasNoTokens.sol",
+        "id": 2760,
+        "nodeType": "ImportDirective",
+        "scope": 2769,
+        "sourceUnit": 2533,
+        "src": "53:27:37",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/contracts/ownership/HasNoContracts.sol",
+        "file": "./HasNoContracts.sol",
+        "id": 2761,
+        "nodeType": "ImportDirective",
+        "scope": 2769,
+        "sourceUnit": 2472,
+        "src": "81:30:37",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 2762,
+              "name": "HasNoEther",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2507,
+              "src": "409:10:37",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_HasNoEther_$2507",
+                "typeString": "contract HasNoEther"
+              }
+            },
+            "id": 2763,
+            "nodeType": "InheritanceSpecifier",
+            "src": "409:10:37"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 2764,
+              "name": "HasNoTokens",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2532,
+              "src": "421:11:37",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_HasNoTokens_$2532",
+                "typeString": "contract HasNoTokens"
+              }
+            },
+            "id": 2765,
+            "nodeType": "InheritanceSpecifier",
+            "src": "421:11:37"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 2766,
+              "name": "HasNoContracts",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2471,
+              "src": "434:14:37",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_HasNoContracts_$2471",
+                "typeString": "contract HasNoContracts"
+              }
+            },
+            "id": 2767,
+            "nodeType": "InheritanceSpecifier",
+            "src": "434:14:37"
+          }
+        ],
+        "contractDependencies": [
+          2300,
+          2471,
+          2507,
+          2532,
+          2854
+        ],
+        "contractKind": "contract",
+        "documentation": "@title Base contract for contracts that should not own things.\n@author Remco Bloemen <remco@2π.com>\n@dev Solves a class of errors where a contract accidentally becomes owner of Ether, Tokens or\nOwned contracts. See respective base contracts for details.",
+        "fullyImplemented": true,
+        "id": 2768,
+        "linearizedBaseContracts": [
+          2768,
+          2471,
+          2532,
+          2300,
+          2507,
+          2854
+        ],
+        "name": "NoOwner",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 2769,
+        "src": "389:63:37"
+      }
+    ],
+    "src": "0:453:37"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/contracts/ownership/NoOwner.sol",
+      "exportedSymbols": {
+        "NoOwner": [
+          2768
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".24"
+          ]
+        },
+        "id": 2758,
+        "name": "PragmaDirective",
+        "src": "0:24:37"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 2508,
+          "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/contracts/ownership/HasNoEther.sol",
+          "file": "./HasNoEther.sol",
+          "scope": 2769,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 2759,
+        "name": "ImportDirective",
+        "src": "26:26:37"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 2533,
+          "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/contracts/ownership/HasNoTokens.sol",
+          "file": "./HasNoTokens.sol",
+          "scope": 2769,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 2760,
+        "name": "ImportDirective",
+        "src": "53:27:37"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 2472,
+          "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/contracts/ownership/HasNoContracts.sol",
+          "file": "./HasNoContracts.sol",
+          "scope": 2769,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 2761,
+        "name": "ImportDirective",
+        "src": "81:30:37"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            2300,
+            2471,
+            2507,
+            2532,
+            2854
+          ],
+          "contractKind": "contract",
+          "documentation": "@title Base contract for contracts that should not own things.\n@author Remco Bloemen <remco@2π.com>\n@dev Solves a class of errors where a contract accidentally becomes owner of Ether, Tokens or\nOwned contracts. See respective base contracts for details.",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            2768,
+            2471,
+            2532,
+            2300,
+            2507,
+            2854
+          ],
+          "name": "NoOwner",
+          "nodes": [
+            null
+          ],
+          "scope": 2769
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "HasNoEther",
+                  "referencedDeclaration": 2507,
+                  "type": "contract HasNoEther"
+                },
+                "id": 2762,
+                "name": "UserDefinedTypeName",
+                "src": "409:10:37"
+              }
+            ],
+            "id": 2763,
+            "name": "InheritanceSpecifier",
+            "src": "409:10:37"
+          },
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "HasNoTokens",
+                  "referencedDeclaration": 2532,
+                  "type": "contract HasNoTokens"
+                },
+                "id": 2764,
+                "name": "UserDefinedTypeName",
+                "src": "421:11:37"
+              }
+            ],
+            "id": 2765,
+            "name": "InheritanceSpecifier",
+            "src": "421:11:37"
+          },
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "HasNoContracts",
+                  "referencedDeclaration": 2471,
+                  "type": "contract HasNoContracts"
+                },
+                "id": 2766,
+                "name": "UserDefinedTypeName",
+                "src": "434:14:37"
+              }
+            ],
+            "id": 2767,
+            "name": "InheritanceSpecifier",
+            "src": "434:14:37"
+          }
+        ],
+        "id": 2768,
+        "name": "ContractDefinition",
+        "src": "389:63:37"
+      }
+    ],
+    "id": 2769,
+    "name": "SourceUnit",
+    "src": "0:453:37"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-10T19:21:32.257Z",
+  "devdoc": {
+    "author": "Remco Bloemen <remco@2π.com>",
+    "methods": {
+      "reclaimContract(address)": {
+        "details": "Reclaim ownership of Ownable contracts",
+        "params": {
+          "_contractAddr": "The address of the Ownable to be reclaimed."
+        }
+      },
+      "reclaimEther()": {
+        "details": "Transfer all Ether held by the contract to the owner."
+      },
+      "reclaimToken(address)": {
+        "details": "Reclaim all ERC20Basic compatible tokens",
+        "params": {
+          "_token": "ERC20Basic The address of the token contract"
+        }
+      },
+      "renounceOwnership()": {
+        "details": "Allows the current owner to relinquish control of the contract."
+      },
+      "tokenFallback(address,uint256,bytes)": {
+        "details": "Reject all ERC223 compatible tokens",
+        "params": {
+          "_data": "Bytes The data passed from the caller.",
+          "_from": "address The address that is transferring the tokens",
+          "_value": "uint256 the amount of the specified token"
+        }
+      },
+      "transferOwnership(address)": {
+        "details": "Allows the current owner to transfer control of the contract to a newOwner.",
+        "params": {
+          "_newOwner": "The address to transfer ownership to."
+        }
+      }
+    },
+    "title": "Base contract for contracts that should not own things."
+  },
+  "userdoc": {
+    "methods": {
+      "renounceOwnership()": {
+        "notice": "Renouncing to ownership will leave the contract without an owner. It will not be possible to call the functions with the `onlyOwner` modifier anymore."
+      }
+    }
+  }
+}

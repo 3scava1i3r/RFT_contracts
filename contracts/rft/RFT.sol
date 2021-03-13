@@ -1,6 +1,6 @@
-pragma solidity ^0.4.24;
+pragma solidity >=0.6.0 <0.8.0;
 
-import 'openzeppelin-solidity/contracts/ownership/Ownable.sol'; 
+import '../@openzeppelin/contracts/access/Ownable.sol';
 import './RFTNFTFull.sol';
 import './RFTFTFull.sol';
 import './IRFT.sol';

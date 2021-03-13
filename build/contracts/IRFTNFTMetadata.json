@@ -312,14 +312,14 @@
     "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTMetadata.sol",
     "exportedSymbols": {
       "IRFTNFTMetadata": [
-        399
+        333
       ]
     },
-    "id": 400,
+    "id": 334,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 378,
+        "id": 312,
         "literals": [
           "solidity",
           "^",
@@ -327,16 +327,16 @@
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:9"
+        "src": "0:24:6"
       },
       {
         "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFT.sol",
         "file": "./IRFTNFT.sol",
-        "id": 379,
+        "id": 313,
         "nodeType": "ImportDirective",
-        "scope": 400,
-        "sourceUnit": 338,
-        "src": "26:23:9",
+        "scope": 334,
+        "sourceUnit": 272,
+        "src": "26:23:6",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -346,31 +346,31 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 380,
+              "id": 314,
               "name": "IRFTNFT",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 337,
-              "src": "230:7:9",
+              "referencedDeclaration": 271,
+              "src": "230:7:6",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IRFTNFT_$337",
+                "typeIdentifier": "t_contract$_IRFTNFT_$271",
                 "typeString": "contract IRFTNFT"
               }
             },
-            "id": 381,
+            "id": 315,
             "nodeType": "InheritanceSpecifier",
-            "src": "230:7:9"
+            "src": "230:7:6"
           }
         ],
         "contractDependencies": [
-          337
+          271
         ],
         "contractKind": "contract",
         "documentation": "@title RFT Non-Fungible Token interface, that is supplied with Fungible Token\n@notice Optional Metadata interface for Non-Fungible Token",
         "fullyImplemented": false,
-        "id": 399,
+        "id": 333,
         "linearizedBaseContracts": [
-          399,
-          337
+          333,
+          271
         ],
         "name": "IRFTNFTMetadata",
         "nodeType": "ContractDefinition",
@@ -378,7 +378,7 @@
           {
             "body": null,
             "documentation": "@dev Returns name of RFT Non-Fungible Token series",
-            "id": 386,
+            "id": 320,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -386,23 +386,23 @@
             "name": "name",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 382,
+              "id": 316,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "331:2:9"
+              "src": "331:2:6"
             },
             "payable": false,
             "returnParameters": {
-              "id": 385,
+              "id": 319,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 384,
+                  "id": 318,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 386,
-                  "src": "357:6:9",
+                  "scope": 320,
+                  "src": "357:6:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -410,10 +410,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 383,
+                    "id": 317,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "357:6:9",
+                    "src": "357:6:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -423,10 +423,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "356:8:9"
+              "src": "356:8:6"
             },
-            "scope": 399,
-            "src": "318:47:9",
+            "scope": 333,
+            "src": "318:47:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
@@ -434,7 +434,7 @@
           {
             "body": null,
             "documentation": "@dev Returns symbol of RFT Non-Fungible Token series",
-            "id": 391,
+            "id": 325,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -442,23 +442,23 @@
             "name": "symbol",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 387,
+              "id": 321,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "462:2:9"
+              "src": "462:2:6"
             },
             "payable": false,
             "returnParameters": {
-              "id": 390,
+              "id": 324,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 389,
+                  "id": 323,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 391,
-                  "src": "488:6:9",
+                  "scope": 325,
+                  "src": "488:6:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -466,10 +466,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 388,
+                    "id": 322,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "488:6:9",
+                    "src": "488:6:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -479,10 +479,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "487:8:9"
+              "src": "487:8:6"
             },
-            "scope": 399,
-            "src": "447:49:9",
+            "scope": 333,
+            "src": "447:49:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
@@ -490,7 +490,7 @@
           {
             "body": null,
             "documentation": "@dev Returns Unique Resource Identifier of RFT Non-Fungible Token\n@param _tokenId - Unique Non-Fungible Token identifier",
-            "id": 398,
+            "id": 332,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -498,16 +498,16 @@
             "name": "tokenURI",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 394,
+              "id": 328,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 393,
+                  "id": 327,
                   "name": "_tokenId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 398,
-                  "src": "677:16:9",
+                  "scope": 332,
+                  "src": "677:16:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -515,10 +515,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 392,
+                    "id": 326,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "677:7:9",
+                    "src": "677:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -528,20 +528,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "676:18:9"
+              "src": "676:18:6"
             },
             "payable": false,
             "returnParameters": {
-              "id": 397,
+              "id": 331,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 396,
+                  "id": 330,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 398,
-                  "src": "716:6:9",
+                  "scope": 332,
+                  "src": "716:6:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -549,10 +549,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 395,
+                    "id": 329,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "716:6:9",
+                    "src": "716:6:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -562,27 +562,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "715:8:9"
+              "src": "715:8:6"
             },
-            "scope": 399,
-            "src": "659:65:9",
+            "scope": 333,
+            "src": "659:65:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 400,
-        "src": "202:524:9"
+        "scope": 334,
+        "src": "202:524:6"
       }
     ],
-    "src": "0:726:9"
+    "src": "0:726:6"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFTMetadata.sol",
       "exportedSymbols": {
         "IRFTNFTMetadata": [
-          399
+          333
         ]
       }
     },
@@ -596,39 +596,39 @@
             ".24"
           ]
         },
-        "id": 378,
+        "id": 312,
         "name": "PragmaDirective",
-        "src": "0:24:9"
+        "src": "0:24:6"
       },
       {
         "attributes": {
-          "SourceUnit": 338,
+          "SourceUnit": 272,
           "absolutePath": "/home/juuzou/Documents/RFT_contracts/contracts/rft/IRFTNFT.sol",
           "file": "./IRFTNFT.sol",
-          "scope": 400,
+          "scope": 334,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 379,
+        "id": 313,
         "name": "ImportDirective",
-        "src": "26:23:9"
+        "src": "26:23:6"
       },
       {
         "attributes": {
           "contractDependencies": [
-            337
+            271
           ],
           "contractKind": "contract",
           "documentation": "@title RFT Non-Fungible Token interface, that is supplied with Fungible Token\n@notice Optional Metadata interface for Non-Fungible Token",
           "fullyImplemented": false,
           "linearizedBaseContracts": [
-            399,
-            337
+            333,
+            271
           ],
           "name": "IRFTNFTMetadata",
-          "scope": 400
+          "scope": 334
         },
         "children": [
           {
@@ -640,17 +640,17 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "IRFTNFT",
-                  "referencedDeclaration": 337,
+                  "referencedDeclaration": 271,
                   "type": "contract IRFTNFT"
                 },
-                "id": 380,
+                "id": 314,
                 "name": "UserDefinedTypeName",
-                "src": "230:7:9"
+                "src": "230:7:6"
               }
             ],
-            "id": 381,
+            "id": 315,
             "name": "InheritanceSpecifier",
-            "src": "230:7:9"
+            "src": "230:7:6"
           },
           {
             "attributes": {
@@ -664,7 +664,7 @@
               ],
               "name": "name",
               "payable": false,
-              "scope": 399,
+              "scope": 333,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "external"
@@ -677,9 +677,9 @@
                   ]
                 },
                 "children": [],
-                "id": 382,
+                "id": 316,
                 "name": "ParameterList",
-                "src": "331:2:9"
+                "src": "331:2:6"
               },
               {
                 "children": [
@@ -687,7 +687,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 386,
+                      "scope": 320,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "string",
@@ -700,24 +700,24 @@
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 383,
+                        "id": 317,
                         "name": "ElementaryTypeName",
-                        "src": "357:6:9"
+                        "src": "357:6:6"
                       }
                     ],
-                    "id": 384,
+                    "id": 318,
                     "name": "VariableDeclaration",
-                    "src": "357:6:9"
+                    "src": "357:6:6"
                   }
                 ],
-                "id": 385,
+                "id": 319,
                 "name": "ParameterList",
-                "src": "356:8:9"
+                "src": "356:8:6"
               }
             ],
-            "id": 386,
+            "id": 320,
             "name": "FunctionDefinition",
-            "src": "318:47:9"
+            "src": "318:47:6"
           },
           {
             "attributes": {
@@ -731,7 +731,7 @@
               ],
               "name": "symbol",
               "payable": false,
-              "scope": 399,
+              "scope": 333,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "external"
@@ -744,9 +744,9 @@
                   ]
                 },
                 "children": [],
-                "id": 387,
+                "id": 321,
                 "name": "ParameterList",
-                "src": "462:2:9"
+                "src": "462:2:6"
               },
               {
                 "children": [
@@ -754,7 +754,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 391,
+                      "scope": 325,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "string",
@@ -767,24 +767,24 @@
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 388,
+                        "id": 322,
                         "name": "ElementaryTypeName",
-                        "src": "488:6:9"
+                        "src": "488:6:6"
                       }
                     ],
-                    "id": 389,
+                    "id": 323,
                     "name": "VariableDeclaration",
-                    "src": "488:6:9"
+                    "src": "488:6:6"
                   }
                 ],
-                "id": 390,
+                "id": 324,
                 "name": "ParameterList",
-                "src": "487:8:9"
+                "src": "487:8:6"
               }
             ],
-            "id": 391,
+            "id": 325,
             "name": "FunctionDefinition",
-            "src": "447:49:9"
+            "src": "447:49:6"
           },
           {
             "attributes": {
@@ -798,7 +798,7 @@
               ],
               "name": "tokenURI",
               "payable": false,
-              "scope": 399,
+              "scope": 333,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
@@ -810,7 +810,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_tokenId",
-                      "scope": 398,
+                      "scope": 332,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -823,19 +823,19 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 392,
+                        "id": 326,
                         "name": "ElementaryTypeName",
-                        "src": "677:7:9"
+                        "src": "677:7:6"
                       }
                     ],
-                    "id": 393,
+                    "id": 327,
                     "name": "VariableDeclaration",
-                    "src": "677:16:9"
+                    "src": "677:16:6"
                   }
                 ],
-                "id": 394,
+                "id": 328,
                 "name": "ParameterList",
-                "src": "676:18:9"
+                "src": "676:18:6"
               },
               {
                 "children": [
@@ -843,7 +843,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 398,
+                      "scope": 332,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "string",
@@ -856,34 +856,34 @@
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 395,
+                        "id": 329,
                         "name": "ElementaryTypeName",
-                        "src": "716:6:9"
+                        "src": "716:6:6"
                       }
                     ],
-                    "id": 396,
+                    "id": 330,
                     "name": "VariableDeclaration",
-                    "src": "716:6:9"
+                    "src": "716:6:6"
                   }
                 ],
-                "id": 397,
+                "id": 331,
                 "name": "ParameterList",
-                "src": "715:8:9"
+                "src": "715:8:6"
               }
             ],
-            "id": 398,
+            "id": 332,
             "name": "FunctionDefinition",
-            "src": "659:65:9"
+            "src": "659:65:6"
           }
         ],
-        "id": 399,
+        "id": 333,
         "name": "ContractDefinition",
-        "src": "202:524:9"
+        "src": "202:524:6"
       }
     ],
-    "id": 400,
+    "id": 334,
     "name": "SourceUnit",
-    "src": "0:726:9"
+    "src": "0:726:6"
   },
   "compiler": {
     "name": "solc",
@@ -891,7 +891,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-08T14:55:07.470Z",
+  "updatedAt": "2021-03-09T13:44:50.026Z",
   "devdoc": {
     "methods": {
       "approve(address,uint256)": {

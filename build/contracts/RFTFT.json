@@ -9778,9 +9778,68 @@
     "name": "solc",
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5": {
+      "events": {},
+      "links": {},
+      "address": "0xc4cBdc19856bAAAefb8BaDe38DC66A3Cc02a8471",
+      "transactionHash": "0x19e41de197ea4b4f9966277937dc27068b023146b7995022f5efb1c391765eae"
+    },
+    "80001": {
+      "events": {
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_to",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_tokenId",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        },
+        "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_owner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_approved",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_tokenId",
+              "type": "uint256"
+            }
+          ],
+          "name": "Approval",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x61E29da556B955AF57D25CbCD2D5DB7610241A1D",
+      "transactionHash": "0x29ba6f0346549801e682d3865ea28f8d9bd840a9f845edb79aeec4860acee443"
+    }
+  },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-08T14:55:07.473Z",
+  "updatedAt": "2021-03-09T10:37:48.669Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {
       "allowance(address,address)": {
