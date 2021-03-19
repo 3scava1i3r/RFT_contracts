@@ -1,10 +1,10 @@
-pragma solidity >=0.6.0 <0.8.0;
+pragma solidity ^0.5.0;
 
 /**
  * @title RFT Non-Fungible Token interface, that is supplied with Fungible Token
  * @notice Non-Fungible Token interface
  */
-interface IRNFT {
+interface IRFTNFT {
     /**
      * @dev This emits when ownership of any NFT changes by any mechanism.
      *  This event emits when NFTs are created (`from` == 0) and destroyed
@@ -45,7 +45,7 @@ interface IRNFT {
      * @dev NFTs assigned to the zero address are considered invalid, and this
      *  function throws for queries about the zero address.
      * @param _owner - An address for whom to query the balance
-     * @return balance The number of NFTs owned by `_owner`, possibly zero
+     * @return The number of NFTs owned by `_owner`, possibly zero
      */
     function balanceOf(address _owner) external view returns (uint256 balance);
 
@@ -54,7 +54,7 @@ interface IRNFT {
      * @dev NFTs assigned to zero address are considered invalid, and queries
      *  about them do throw.
      * @param _tokenId - The identifier for an NFT
-     * @return owner The address of the owner of the NFT
+     * @return The address of the owner of the NFT
      */
     function ownerOf(uint256 _tokenId) external view returns (address owner);
 
@@ -72,7 +72,7 @@ interface IRNFT {
      * @notice Get the approved address for a single NFT
      * @dev Throws if `_tokenId` is not a valid NFT
      * @param _tokenId - The NFT to find the approved address for
-     * @return operator The approved address for this NFT, or the zero address if there is none
+     * @return The approved address for this NFT, or the zero address if there is none
      */
     function getApproved(uint256 _tokenId) external view returns (address operator);
 
@@ -159,5 +159,5 @@ interface IRNFT {
         address _to,
         uint256 _tokenId,
         bytes calldata _data
-    ) external;
+    ) external ;
 }

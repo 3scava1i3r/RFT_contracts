@@ -1,34 +1,22 @@
-pragma solidity >=0.6.0 <0.8.0;
+pragma solidity ^0.5.0;
 
-import '../@openzeppelin/contracts/math/SafeMath.sol';
-import '../@openzeppelin/contracts/utils/Address.sol';
-import '../@openzeppelin/contracts/introspection/ERC165.sol';
-import '../@openzeppelin/contracts/utils/EnumerableMap.sol';
-import '../@openzeppelin/contracts/utils/EnumerableSet.sol';
-import './IRNFT.sol';
-import './IRNFTReceiver.sol';
-import './IRNFTEnumerable.sol';
-import './IRNFTMetadata.sol';
+import 'https://github.com/3scava1i3r/RFT_contracts/blob/main/contracts/NEW_RFT/openzeppelin-solidity/contracts/math/SafeMath.sol';
+import 'https://github.com/3scava1i3r/RFT_contracts/blob/main/contracts/NEW_RFT/openzeppelin-solidity/contracts/utils/Address.sol';
+import 'https://github.com/3scava1i3r/RFT_contracts/blob/main/contracts/NEW_RFT/openzeppelin-solidity/contracts/introspection/ERC165.sol';
+import './IRFTNFT.sol';
+import './IRFTNFTReceiver.sol';
 
 
-
-contract RNFT is ERC165, IRNFT,IRNFTMetadata,IRNFTEnumerable {
-    
+contract RFTNFT is ERC165, IRFTNFT {
     using SafeMath for uint256;
     using Address for address;
-    using EnumerableSet for EnumerableSet.UintSet;
-    using EnumerableMap for EnumerableMap.UintToAddressMap;
-    
 
     // Equals to `bytes4(keccak256("onRFTReceived(address,address,uint256,bytes)"))`
     // which can be also obtained as `IRFTNFTReceiver(0).onRFTReceived.selector`
     bytes4 private constant _RFTNFT_RECEIVED = 0x150b7a02;
 
     // Mapping from Non-Fungible Token unique identifier (id) to owner address
-    EnumerableMap.UintToAddressMap private _tokenOwners;
-    
-    // Mapping holder address to their enumerable set of tokens
-    mapping (address => EnumerableSet.UintSet) private _holderTokens;
+    mapping (uint256 => address) internal _tokenOwner;
 
     // Mapping from Non-Fungible Token unique identifier (id) to approved address
     mapping (uint256 => address) internal _tokenApprovals;
@@ -57,70 +45,7 @@ contract RNFT is ERC165, IRNFT,IRNFTMetadata,IRNFTEnumerable {
      */
     constructor() public {
         _registerInterface(_InterfaceId_RFTNFT);
-        
     }
-
-
-    /**
-     * @dev See {IRNFTEnumerable-tokenOfOwnerByIndex}.
-     */
-    function tokenOfOwnerByIndex(address owner, uint256 index) public view virtual override returns (uint256) {
-        return _holderTokens[owner].at(index);
-    }
-
-    /**
-     * @dev See {IRNFTEnumerable-totalSupply}.
-     */
-    function totalSupply() public view virtual override returns (uint256) {
-        // _tokenOwners are indexed by tokenIds, so .length() returns the number of tokenIds
-        return _tokenOwners.length();
-    }
-
-    /**
-     * @dev See {IRNFTEnumerable-tokenByIndex}.
-     */
-    function tokenByIndex(uint256 index) public view virtual override returns (uint256) {
-        (uint256 tokenId, ) = _tokenOwners.at(index);
-        return tokenId;
-    }
-
-
-    /**
-     * @dev See {IERC721Metadata-name}.
-     */
-    function name() public view virtual override returns (string memory) {
-        return name;
-    }
-
-    /**
-     * @dev See {IERC721Metadata-symbol}.
-     */
-    function symbol() public view virtual override returns (string memory) {
-        return symbol;
-    }
-
-    /**
-     * @dev See {IERC721Metadata-tokenURI}.
-     */
-    function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {
-        require(_exists(tokenId), "RNFTMetadata: URI query for nonexistent token");
-
-        string memory tokenURI = tokenURIs[tokenId];
-        string memory base = baseURI();
-
-        // If there is no base URI, return the token URI.
-        if (bytes(base).length == 0) {
-            return tokenURI;
-        }
-        // If both are set, concatenate the baseURI and tokenURI (via abi.encodePacked).
-        if (bytes(tokenURI).length > 0) {
-            return string(abi.encodePacked(base, tokenURI));
-        }
-        // If there is a baseURI but no tokenURI, concatenate the tokenID to the baseURI.
-        return string(abi.encodePacked(base, tokenId.toString()));
-    }
-
-
 
     /**
      * @dev Returns NFT Token balance of selected address (_owner),
@@ -130,7 +55,6 @@ contract RNFT is ERC165, IRNFT,IRNFTMetadata,IRNFTEnumerable {
     function balanceOf(address _owner)
         public 
         view 
-        override
         returns (uint256) 
     {
         require(_owner != address(0));
@@ -144,7 +68,6 @@ contract RNFT is ERC165, IRNFT,IRNFTMetadata,IRNFTEnumerable {
     function ownerOf(uint256 _tokenId)
         public
         view 
-        override
         returns (address) 
     {
         address _owner = _tokenOwner[_tokenId];
@@ -163,7 +86,7 @@ contract RNFT is ERC165, IRNFT,IRNFTMetadata,IRNFTEnumerable {
     function approve(
         address _to,
         uint256 _tokenId
-    ) public override {
+    ) public {
         address _owner = ownerOf(_tokenId);
         require(_to != _owner);
         require(msg.sender == _owner || isApprovedForAll(_owner, msg.sender));
@@ -181,7 +104,6 @@ contract RNFT is ERC165, IRNFT,IRNFTMetadata,IRNFTEnumerable {
     function getApproved(uint256 _tokenId) 
         public 
         view 
-        override
         returns (address) 
     {
         require(_exists(_tokenId));
@@ -199,7 +121,7 @@ contract RNFT is ERC165, IRNFT,IRNFTMetadata,IRNFTEnumerable {
     function setApprovalForAll(
         address _to,
         bool _approved
-    ) public override{
+    ) public {
         require(_to != msg.sender);
         _operatorApprovals[msg.sender][_to] = _approved;
         emit ApprovalForAll(msg.sender, _to, _approved);
@@ -216,7 +138,7 @@ contract RNFT is ERC165, IRNFT,IRNFTMetadata,IRNFTEnumerable {
     function isApprovedForAll(
         address _owner,
         address _operator
-    ) public view override returns (bool) {
+    ) public view returns (bool) {
         return _operatorApprovals[_owner][_operator];
     }
 
@@ -232,7 +154,7 @@ contract RNFT is ERC165, IRNFT,IRNFTMetadata,IRNFTEnumerable {
         address _from,
         address _to,
         uint256 _tokenId
-    ) public override{
+    ) public {
         require(_isApprovedOrOwner(msg.sender, _tokenId));
         require(_to != address(0));
 
@@ -258,7 +180,7 @@ contract RNFT is ERC165, IRNFT,IRNFTMetadata,IRNFTEnumerable {
         address _from,
         address _to,
         uint256 _tokenId
-    ) public override {
+    ) public {
         safeTransferFrom(_from, _to, _tokenId, "");
     }
 
@@ -274,7 +196,7 @@ contract RNFT is ERC165, IRNFT,IRNFTMetadata,IRNFTEnumerable {
         address _to,
         uint256 _tokenId,
         bytes memory _data
-    ) public override {
+    ) public {
         transferFrom(_from, _to, _tokenId);
         require(_checkAndCallSafeTransfer(_from, _to, _tokenId, _data));
     }
@@ -323,7 +245,7 @@ contract RNFT is ERC165, IRNFT,IRNFTMetadata,IRNFTEnumerable {
         address _to, 
         uint256 _tokenId
     ) 
-        internal virtual
+        internal 
         returns (bool)
     {
         require(_to != address(0));
@@ -341,7 +263,7 @@ contract RNFT is ERC165, IRNFT,IRNFTMetadata,IRNFTEnumerable {
         address _owner,
         uint256 _tokenId
     ) 
-        internal virtual
+        internal 
         returns (bool)
     {
         _clearApproval(_owner, _tokenId);
@@ -373,7 +295,7 @@ contract RNFT is ERC165, IRNFT,IRNFTMetadata,IRNFTEnumerable {
     function _addTokenTo(
         address _to,
         uint256 _tokenId
-    ) internal virtual{
+    ) internal {
         require(_tokenOwner[_tokenId] == address(0));
         _tokenOwner[_tokenId] = _to;
         _ownedTokensCount[_to] = _ownedTokensCount[_to].add(1);
@@ -387,7 +309,7 @@ contract RNFT is ERC165, IRNFT,IRNFTMetadata,IRNFTEnumerable {
     function _removeTokenFrom(
         address _from,
         uint256 _tokenId
-    ) internal virtual{
+    ) internal {
         require(ownerOf(_tokenId) == _from);
         _ownedTokensCount[_from] = _ownedTokensCount[_from].sub(1);
         _tokenOwner[_tokenId] = address(0);

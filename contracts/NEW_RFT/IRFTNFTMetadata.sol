@@ -1,12 +1,12 @@
-pragma solidity >=0.6.0 <0.8.0;
+pragma solidity ^0.5.0;
 
-import "./IRNFT.sol";
+import "./IRFTNFT.sol";
 
 /**
  * @title RFT Non-Fungible Token interface, that is supplied with Fungible Token
  * @notice Optional Metadata interface for Non-Fungible Token
  */
-interface IRNFTMetadata is IRNFT {
+contract IRFTNFTMetadata is IRFTNFT {
     /**
      * @dev Returns name of RFT Non-Fungible Token series
      */
@@ -21,5 +21,5 @@ interface IRNFTMetadata is IRNFT {
      * @dev Returns Unique Resource Identifier of RFT Non-Fungible Token
      * @param _tokenId - Unique Non-Fungible Token identifier
      */
-    function tokenURI(uint256 _tokenId) external view returns (string memory);
+    function tokenURI(uint256 _tokenId) public view returns (string memory);
 }
